@@ -9228,7 +9228,7 @@ footer .social-links li a:hover:after {
 }
 
 .overlay-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0;

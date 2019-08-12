@@ -4,7 +4,7 @@ $("#search-btn").click(function(){
 $(".menu-toggle").click(function(){
   $(".overlay-menu").toggleClass("show");
   $(".overlay-menu .menu-toggle").toggleClass("on");
-  $("body").toggleClass("overflow-hidden");
+  $("body").toggleClass("overlay-show");
 });
 function addToFavorites(element){
   element.classList.toggle("icon-heart-empty");
@@ -40,7 +40,6 @@ $(document).ready(function(){
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
             }
           },
           {
