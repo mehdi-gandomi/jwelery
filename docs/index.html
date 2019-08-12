@@ -7,15 +7,14 @@
     <title>جواهرات حسین پور</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 ">
     <main class="container flex-shrink-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white " style="padding-top: 4.4rem;">
         
           
-            <div class="collapse navbar-collapse right-nav">
-                <button class="menu-toggle round-button mx-2">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+            <div class="right-nav d-flex">
+                <button class="menu-toggle  mx-2">
+                    <span></span><span></span>
                 </button>
                 <div class="input-group search-input collapsed mx-2">
                     
@@ -33,14 +32,14 @@
             
             
           
-            <div class="collapse navbar-collapse" id="nav-left">
+            
                 <button class=" round-button mx-2">
                     <i class="icon-user-outline"></i>
                 </button>
                 <button class=" round-button mx-2">
                     <i class="icon-shopping-bag"></i>
                 </button>
-              </div>
+            
             <!-- Mobile -->
             <div class="collapse" id="navbarMobile" aria-expanded="false" style="">
                 <ul class="nav navbar-nav">
@@ -64,7 +63,7 @@
                   </li>
                 </ul>
             </div>
-      </nav>
+        </nav>
 
       <section class="content">
           <section class="slider">
@@ -117,9 +116,7 @@
                                 <button class="btn">
                                     <i class="icon-cart"></i>
                                 </button>
-                                <button class="btn">
-                                    <i class="icon-heart-empty"></i>
-                                </button>
+                                <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                             </div>
                             <img src="img/jwel-5.jpg" alt="">
                         </div>
@@ -134,9 +131,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-1.jpg" alt="">
                         </div>
@@ -151,9 +146,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-2.jpg" alt="">
                         </div>
@@ -168,9 +161,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-3.png" alt="">
                         </div>
@@ -185,9 +176,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-6.jpg" alt="">
                         </div>
@@ -202,9 +191,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-5.jpg" alt="">
                         </div>
@@ -219,9 +206,7 @@
                                         <button class="btn">
                                             <i class="icon-cart"></i>
                                         </button>
-                                        <button class="btn">
-                                            <i class="icon-heart-empty"></i>
-                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                     </div>
                             <img src="img/jwel-6.jpg" alt="">
                         </div>
@@ -241,9 +226,7 @@
                                     <button class="btn">
                                         <i class="icon-cart"></i>
                                     </button>
-                                    <button class="btn">
-                                        <i class="icon-heart-empty"></i>
-                                    </button>
+                                    <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                 </div>
                                 <img src="img/jwel-5.jpg" alt="">
                             </div>
@@ -258,9 +241,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-1.jpg" alt="">
                             </div>
@@ -275,9 +256,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-2.jpg" alt="">
                             </div>
@@ -292,9 +271,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-3.png" alt="">
                             </div>
@@ -309,9 +286,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-6.jpg" alt="">
                             </div>
@@ -326,9 +301,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-5.jpg" alt="">
                             </div>
@@ -343,9 +316,7 @@
                                             <button class="btn">
                                                 <i class="icon-cart"></i>
                                             </button>
-                                            <button class="btn">
-                                                <i class="icon-heart-empty"></i>
-                                            </button>
+                                            <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                                         </div>
                                 <img src="img/jwel-6.jpg" alt="">
                             </div>
@@ -392,6 +363,49 @@
         </div>
       </section>
     </main>
+    <div class="overlay-menu">
+       <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        
+          
+            <div class="d-flex right-nav">
+                <button class="menu-toggle  mx-2">
+                    <span></span><span></span>
+                </button>
+                <div></div>
+            </div>
+            <a class="navbar-brand mx-auto" href="#" style="    padding-right: 3.5rem;">
+                <img id="logo" src="img/logo.jpg" alt="">
+            </a>
+            
+            
+          
+            
+                <button class=" round-button mx-2">
+                    <i class="icon-user-outline"></i>
+                </button>
+                <button class=" round-button mx-2">
+                    <i class="icon-shopping-bag"></i>
+                </button>
+              
+            
+        </nav>
+        <ul class="overlay-navbar ">
+            <li>
+                <a href="">صفحه اصلی</a>
+            </li>
+            <li>
+                    <a href="">درباره ما</a>
+            </li>
+            <li>
+                    <a href="">تماس با ما</a>
+            </li>
+            <li>
+                    <a href="">خدمات مشتری</a>
+            </li>
+        </ul>
+       </div>
+    </div>
     <footer class="footer  py-3 ">
             <div class="container">
               <div class="row">

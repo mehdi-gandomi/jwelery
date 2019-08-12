@@ -1,9 +1,15 @@
 $("#search-btn").click(function(){
-    var searchInput=$(".search-input");
-    if(searchInput.hasClass("collapsed")){
-        searchInput.toggleClass("collapsed");
-    }
+  $(".search-input").toggleClass("collapsed");
 })
+$(".menu-toggle").click(function(){
+  $(".overlay-menu").toggleClass("show");
+  $(".overlay-menu .menu-toggle").toggleClass("on");
+  $("body").toggleClass("overflow-hidden");
+});
+function addToFavorites(element){
+  element.classList.toggle("icon-heart-empty");
+  element.classList.toggle("icon-heart");
+}
 $(document).ready(function(){
   
     $(".main-slider").slick({
