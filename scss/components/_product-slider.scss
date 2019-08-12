@@ -1,0 +1,94 @@
+.product-slider{
+    direction: ltr !important;
+
+    .product-title{
+      font-size: 1.15rem !important;
+    }
+    .product-price{
+      color: #a0a0a0;
+      font-size: 0.75rem;
+    }
+    .product-img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 20px;
+        }
+        .product-actions{
+          position: absolute;
+          top: 12px;
+          right: 10px;
+          .btn{
+            padding: 0 !important;
+            &:focus{
+              box-shadow: unset !important;
+            }
+            i{
+              font-size: 1.3rem !important;
+            }
+          }
+        }
+    }
+    .product-details{
+        padding-right: 2rem;
+        direction: rtl !important;
+        margin-top: 1rem;
+    }
+     .controls{
+        position:absolute;
+        cursor: pointer;
+        top:40%;
+        width:45px;
+        height:45px;
+        background:#fff;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+        border:0 none;
+        margin-top:-22.5px;
+        text-align:center;
+        font:20px/45px;
+        color:#000;
+        z-index:5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        &:focus{
+            box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23) !important;
+            outline: 0;
+        }
+        &:before{
+            border-style: solid;
+            border-width: 0.10em 0.10em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.8em;
+            position: relative;
+            transform: rotate(-45deg);
+            vertical-align: top;
+            width: 0.8em;
+        }
+      }
+      
+       .NextArrow{
+        
+        right: -25px;
+        
+      }
+      
+       .NextArrow:before{
+        left: -3px;
+        transform: rotate(45deg);
+      }
+      
+      .PrevArrow{
+        left:-25px;
+      }
+      
+      .PrevArrow:before{
+        left: 0.25em;
+        transform: rotate(-135deg);
+      }
+      
+}

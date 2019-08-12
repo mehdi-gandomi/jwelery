@@ -1,0 +1,313 @@
+body,html{
+  direction: rtl;
+  text-align: right;
+}
+.slider {
+    height: 450px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  #logo {
+    background: #ccc;
+    width: 150px;
+    height: 70px;
+  }
+  
+  .navbar-toggler {
+    margin-top: 15px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .navbar {
+        height: 130px;
+     }
+    #logo {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      bottom: -20px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      padding-right: 75px;
+    }
+    #nav-left {
+      justify-content: flex-end;
+    }
+    .navbar-expand-lg .navbar-collapse{
+      flex-basis: 0 !important;
+    }
+  }
+
+  .round-button{
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu-toggle{
+    
+    // &:hover{
+    //   background: lighten(#000, 90)
+    // }
+    .bar{
+      height: 2px;
+      width:15px;
+      color: #000;
+      background-color: #000;
+      margin: 0.05rem 0;
+    }
+  }
+
+  .search-input{
+    transition: all 0.8s;
+    width: 50%;
+    &.collapsed{
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      width: 40px !important;
+      height: 40px !important;
+      input{
+        display: none;
+      }
+      .input-group-prepend{
+        margin-right: 0 !important;
+      }
+    }
+    input{
+      border-radius: 20px !important;
+    }
+    .input-group-prepend{
+      margin-right: -55px !important;
+      padding-top: 0.1rem;
+      button{
+        outline: none;
+        &:focus{
+          box-shadow: unset !important;
+          outline: 0 !important;
+        }
+      }
+    }
+  }
+
+
+  
+  .btn-cta{
+    position: relative;
+    &.has-arrow{
+      &:before{
+        border-style: solid;
+        border-width: 0.10em 0.10em 0 0;
+        content: '';
+        display: inline-block;
+        height: 0.6em;  
+        position: absolute;
+        transform: rotate(-135deg) translateX(60%);
+        width: 0.6em;
+        left:1.5em;
+        top: 50%;
+      }
+    }
+    &:hover{
+      background: #fff;  
+      border: 1px solid rgb(97, 94, 94);
+    }
+    background: #333;
+    color: #c8c89c;
+    border-radius: 30px;
+    padding: 0.5rem 3rem;
+    font-size: 0.85rem;
+    &.compacter{
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  footer{
+    margin-top: 8rem;
+    .footer-links{
+      list-style: none;
+      padding: 0;
+      li{
+        display: inline-block;
+        margin: 0 0.5rem;
+        font-size: 0.8rem;
+        a{
+          color: #333;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .copyright{
+      font-size: 0.8rem;
+      .copyright-link{
+        color: rgb(110, 102, 102);
+      }
+    }
+    .sign{
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .social-links{
+      list-style: none;
+      display: inline-block;
+      padding-right: 2rem;
+      li{
+        display: inline-block;
+        margin: 0 0.5rem;
+        /* Effect 3b */
+        a {
+          color: #333;
+          font-size: 0px;  
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          width: 40px;
+          height: 40px;
+          padding: 0.5rem;
+          font-size: 1.25rem;
+          line-height: 1;
+          box-shadow: 0 0 0 4px #fff;
+          -webkit-transition: color 0.3s;
+          -moz-transition: color 0.3s;
+          transition: color 0.3s;
+          border: 1px solid #000;
+          border-radius: .25rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          &:after{
+            top: -2px;
+            left: -2px;
+            padding: 2px;
+            z-index: -1;
+            background: #fff;
+            -webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
+            -moz-transition: -moz-transform 0.2s, opacity 0.3s;
+            transition: transform 0.2s, opacity 0.3s;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            -webkit-box-sizing: content-box; 
+            -moz-box-sizing: content-box; 
+            box-sizing: content-box;
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+            opacity: 0;
+          }
+          &:before{
+            font-family: "jwelery";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+           
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* opacity: .8; */
+           
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+           
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+           
+            /* Animation center compensation - margins should be symmetric */
+            /* remove if not needed */
+            margin-left: .2em;
+           
+            /* you can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+           
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+           
+            /* Uncomment for 3D effect */
+            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+          }
+          &.icon-mail{
+            &:hover{
+              color: #f06060;
+            }
+            &:before{
+              content: '\e802';
+            }
+          }
+          &.icon-telegram{
+            &:hover{
+              color: #799cfc;
+            }
+            &:before{
+              content: '\f2c6';
+            }
+          }
+          &.icon-facebook{
+            &:hover{
+              color: #243cc4;
+            }
+            &:before{
+              content: '\f300';
+            }
+          }
+          &.icon-instagram{
+            &:hover{
+              color: #f0680e;
+            }
+            &:before{
+              content: '\f16d';
+            }
+          }
+          &.icon-pinterest{
+            &:hover{
+              color: #c90000;
+            }
+            &:before{
+              content: '\e805';
+            }
+          }
+          &:hover{
+            text-decoration: none;
+            &:after{
+              -webkit-transform: scale(1);
+              -moz-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1);
+              opacity: 1;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
