@@ -22,6 +22,20 @@ body,html{
   .input-group>.form-control:focus{
     z-index: 2 !important;
   }  
+  .navbar-expand-lg{
+    position: relative;
+    justify-content: space-between !important;
+    .navbar-brand{
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    // &.expanded-search{
+    //   .navbar-brand{
+    //     margin-right: -173px;
+    //   }
+    // }
+  }
   .navbar-toggler {
     margin-top: 15px;
   }
@@ -177,28 +191,37 @@ body,html{
 
   .search-input{
     transition: all 0.8s;
-    width: 50%;
+    width: 250px;
+    border-radius: 20px !important;
+    border: 1px solid #000;
     &.collapsed{
-      transition: all 0.2s;
+      // transition: all 0.2s;
+
       border-radius: 50%;
-      border: 1px solid #000;
       display: flex;
       justify-content: center;
       width: 40px !important;
       height: 40px !important;
       input{
-        display: none;
+        position: absolute;
+        
+        // transition: all 0.8s;
+        width: 100%;
       }
       .input-group-prepend{
-        margin-right: 0 !important;
+      left: -5px;
+        transition: all 0.8s;
       }
     }
     input{
+      border: 0 !important;
       border-radius: 20px !important;
     }
     .input-group-prepend{
-      margin-right: -55px !important;
-      padding-top: 0.1rem;
+      
+      position: absolute;
+      left: -1px;
+      top: 2px;
       button{
         outline: none;
         &:focus{

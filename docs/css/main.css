@@ -8709,6 +8709,20 @@ body, html {
   z-index: 2 !important;
 }
 
+.navbar-expand-lg {
+  position: relative;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.navbar-expand-lg .navbar-brand {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
 .navbar-toggler {
   margin-top: 15px;
 }
@@ -8960,14 +8974,13 @@ section.content {
 .search-input {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  width: 50%;
+  width: 250px;
+  border-radius: 20px !important;
+  border: 1px solid #000;
 }
 
 .search-input.collapsed {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
   border-radius: 50%;
-  border: 1px solid #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8979,20 +8992,25 @@ section.content {
 }
 
 .search-input.collapsed input {
-  display: none;
+  position: absolute;
+  width: 100%;
 }
 
 .search-input.collapsed .input-group-prepend {
-  margin-right: 0 !important;
+  left: -5px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .search-input input {
+  border: 0 !important;
   border-radius: 20px !important;
 }
 
 .search-input .input-group-prepend {
-  margin-right: -55px !important;
-  padding-top: 0.1rem;
+  position: absolute;
+  left: -1px;
+  top: 2px;
 }
 
 .search-input .input-group-prepend button {
