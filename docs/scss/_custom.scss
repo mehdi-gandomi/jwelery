@@ -26,11 +26,11 @@ body{
     z-index: 2 !important;
   }  
   .overlay-menu .navbar.is-mobile{
-    // .navbar-brand{
-    //   top:-5px !important;
-    // }
+    .navbar-brand{
+      top:9px !important;
+    }
     .right-nav,.left-nav{
-      margin-top: 8rem !important;
+      margin-top: 8.9rem !important;
     }
     .navbar{
       height:176px !important
@@ -44,7 +44,7 @@ body{
       }
     }
     .right-nav,.left-nav{
-      margin-top: 4rem ;
+      margin-top: 5rem ;
     }
   }
   .navbar-expand-lg{
@@ -213,7 +213,12 @@ body{
     }
   }
   
-
+@media(max-width:992px){
+  .search-input{
+    width: 200px !important;
+  }
+  
+}
   .search-input{
     transition: all 0.8s;
     width: 250px;

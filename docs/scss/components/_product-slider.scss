@@ -41,8 +41,8 @@
         position:absolute;
         cursor: pointer;
         top:40%;
-        width:45px;
-        height:45px;
+        width:30px;
+        height:30px;
         background:#fff;
         box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
         border:0 none;
@@ -60,14 +60,14 @@
         }
         &:before{
             border-style: solid;
-            border-width: 0.10em 0.10em 0 0;
+            border-width: 0.07em 0.07em 0 0;
             content: '';
             display: inline-block;
-            height: 0.8em;
+            height: 0.5em;
             position: relative;
             transform: rotate(-45deg);
             vertical-align: top;
-            width: 0.8em;
+            width: 0.5em;
         }
       }
       
@@ -83,7 +83,7 @@
       }
       
       .PrevArrow{
-        left:-25px;
+        left:-15px;
       }
       
       .PrevArrow:before{
