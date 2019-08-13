@@ -12,16 +12,17 @@ function addToFavorites(element){
 }
 function toggleMobileStyles(x) {
   if (x.matches) { // If media query matches
-    $("main.container").toggleClass("container").toggleClass("container-fluid");
-    $("footer").toggleClass("container").toggleClass("container-fluid");
+
+    $("main.container").removeClass("container").addClass("container-fluid");
+    $("footer").removeClass("container").addClass("container-fluid");
     $("main .navbar").addClass("is-mobile");
-    $(".overlay-menu > div").toggleClass("container").toggleClass("container-fluid");
+    $(".overlay-menu > div").removeClass("container").addClass("container-fluid");
     $(".overlay-menu .navbar").addClass("is-mobile");
   }else{
-    $("main.container").toggleClass("container").toggleClass("container-fluid");
-    $("footer").toggleClass("container").toggleClass("container-fluid");
+    $("main.container").addClass("container").removeClass("container-fluid");
+    $("footer").addClass("container").removeClass("container-fluid");
     $("main .navbar").removeClass("is-mobile");
-    $(".overlay-menu > div").toggleClass("container").toggleClass("container-fluid");
+    $(".overlay-menu > div").addClass("container").removeClass("container-fluid");
     $(".overlay-menu .navbar").removeClass("is-mobile");
   }
 }
