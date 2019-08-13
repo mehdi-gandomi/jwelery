@@ -8704,7 +8704,6 @@ body {
 }
 
 #logo {
-  background: #ccc;
   width: 150px;
   height: 70px;
 }
@@ -8718,7 +8717,7 @@ body {
 }
 
 .overlay-menu .navbar.is-mobile .right-nav, .overlay-menu .navbar.is-mobile .left-nav {
-  margin-top: 8.9rem !important;
+  margin-top: 9.9rem !important;
 }
 
 .overlay-menu .navbar.is-mobile .navbar {
@@ -8734,7 +8733,7 @@ body {
 }
 
 .overlay-menu .navbar.is-mobile .right-nav, .overlay-menu .navbar.is-mobile .left-nav, .navbar.is-mobile .right-nav, .navbar.is-mobile .left-nav {
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .navbar-expand-lg {
@@ -9002,6 +9001,13 @@ section.content {
 @media (max-width: 992px) {
   .search-input {
     width: 200px !important;
+  }
+  .product-details {
+    text-align: center;
+  }
+  .navbar-brand {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

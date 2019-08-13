@@ -18,7 +18,6 @@ body{
   }
   
   #logo {
-    background: #ccc;
     width: 150px;
     height: 70px;
   }
@@ -30,7 +29,7 @@ body{
       top:9px !important;
     }
     .right-nav,.left-nav{
-      margin-top: 8.9rem !important;
+      margin-top: 9.9rem !important;
     }
     .navbar{
       height:176px !important
@@ -44,7 +43,7 @@ body{
       }
     }
     .right-nav,.left-nav{
-      margin-top: 5rem ;
+      margin-top: 6rem ;
     }
   }
   .navbar-expand-lg{
@@ -86,6 +85,7 @@ body{
     .navbar-expand-lg .navbar-collapse{
       flex-basis: 0 !important;
     }
+    
   }
 
   .round-button{
@@ -217,7 +217,13 @@ body{
   .search-input{
     width: 200px !important;
   }
-  
+  .product-details{
+    text-align: center;
+  }
+  .navbar-brand{
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
 }
   .search-input{
     transition: all 0.8s;
