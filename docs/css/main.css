@@ -9298,6 +9298,10 @@ footer .social-links li a:hover:after {
   height: 160px !important;
 }
 
+.overlay-menu .left-nav, .overlay-menu .right-nav {
+  margin-top: 2rem;
+}
+
 .overlay-menu .overlay-navbar {
   list-style: none;
   display: -webkit-box;
