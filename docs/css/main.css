@@ -9079,6 +9079,15 @@ section.content {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 992px) {
+  footer {
+    text-align: center;
+  }
+  footer .social-links {
+    margin-top: 2rem;
+  }
+}
+
 footer {
   margin-top: 8rem;
 }
@@ -9111,8 +9120,8 @@ footer .copyright .copyright-link {
 }
 
 footer .sign {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
 }
 
@@ -9129,7 +9138,7 @@ footer .social-links {
 
 footer .social-links li {
   display: inline-block;
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
   /* Effect 3b */
 }
 
@@ -9296,6 +9305,10 @@ footer .social-links li a:hover:after {
 
 .overlay-menu .navbar {
   height: 160px !important;
+}
+
+.overlay-menu .navbar-brand {
+  top: 15px !important;
 }
 
 .overlay-menu .left-nav, .overlay-menu .right-nav {

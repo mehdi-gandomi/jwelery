@@ -288,7 +288,15 @@ body{
       padding: 0.5rem 1rem;
     }
   }
-  
+  @media(max-width:992px){
+    footer{
+      text-align: center;
+      .social-links{
+        margin-top: 2rem;
+      }
+    }  
+
+  }
   footer{
     margin-top: 8rem;
     .footer-links{
@@ -313,8 +321,8 @@ body{
       }
     }
     .sign{
-      width: 100px;
-      height: 100px;
+      width: 70px;
+      height: 70px;
       display: inline-block;
       img{
         max-width: 100%;
@@ -327,7 +335,7 @@ body{
       padding-right: 2rem;
       li{
         display: inline-block;
-        margin: 0 0.5rem;
+        margin: 0 0.25rem;
         /* Effect 3b */
         a {
           color: #333;
