@@ -10,8 +10,26 @@ function addToFavorites(element){
   element.classList.toggle("icon-heart-empty");
   element.classList.toggle("icon-heart");
 }
+function toggleMobileStyles(x) {
+  if (x.matches) { // If media query matches
+    $("main.container").toggleClass("container").toggleClass("container-fluid");
+    $("footer").toggleClass("container").toggleClass("container-fluid");
+    $("main .navbar").addClass("is-mobile");
+    $(".overlay-menu > div").toggleClass("container").toggleClass("container-fluid");
+    $(".overlay-menu .navbar").addClass("is-mobile");
+  }else{
+    $("main.container").toggleClass("container").toggleClass("container-fluid");
+    $("footer").toggleClass("container").toggleClass("container-fluid");
+    $("main .navbar").removeClass("is-mobile");
+    $(".overlay-menu > div").toggleClass("container").toggleClass("container-fluid");
+    $(".overlay-menu .navbar").removeClass("is-mobile");
+  }
+}
 $(document).ready(function(){
-  
+    var x = window.matchMedia("(max-width:992px)")
+    toggleMobileStyles(x) // Call listener function at run time
+    x.addListener(toggleMobileStyles);
+
     $(".main-slider").slick({
       autoplay:true,
       autoplaySpeed:10000,

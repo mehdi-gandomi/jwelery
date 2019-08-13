@@ -2,6 +2,9 @@ body,html{
   direction: rtl;
   text-align: right;
 }
+body{
+  overflow-x: hidden;
+}
 .btn,button{
   &:focus{
     box-shadow: unset;
@@ -22,6 +25,28 @@ body,html{
   .input-group>.form-control:focus{
     z-index: 2 !important;
   }  
+  .overlay-menu .navbar.is-mobile{
+    // .navbar-brand{
+    //   top:-5px !important;
+    // }
+    .right-nav,.left-nav{
+      margin-top: 8rem !important;
+    }
+    .navbar{
+      height:176px !important
+    }
+  }
+  .overlay-menu .navbar.is-mobile,.navbar.is-mobile{
+    .navbar-brand{
+      top:10px;
+      img{
+        height: 125px !important;
+      }
+    }
+    .right-nav,.left-nav{
+      margin-top: 4rem ;
+    }
+  }
   .navbar-expand-lg{
     position: relative;
     justify-content: space-between !important;

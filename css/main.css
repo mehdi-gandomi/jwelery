@@ -8687,6 +8687,10 @@ body, html {
   text-align: right;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .btn:focus, button:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -8707,6 +8711,26 @@ body, html {
 
 .input-group > .form-control:focus {
   z-index: 2 !important;
+}
+
+.overlay-menu .navbar.is-mobile .right-nav, .overlay-menu .navbar.is-mobile .left-nav {
+  margin-top: 8rem !important;
+}
+
+.overlay-menu .navbar.is-mobile .navbar {
+  height: 176px !important;
+}
+
+.overlay-menu .navbar.is-mobile .navbar-brand, .navbar.is-mobile .navbar-brand {
+  top: 10px;
+}
+
+.overlay-menu .navbar.is-mobile .navbar-brand img, .navbar.is-mobile .navbar-brand img {
+  height: 125px !important;
+}
+
+.overlay-menu .navbar.is-mobile .right-nav, .overlay-menu .navbar.is-mobile .left-nav, .navbar.is-mobile .right-nav, .navbar.is-mobile .left-nav {
+  margin-top: 4rem;
 }
 
 .navbar-expand-lg {
@@ -9257,7 +9281,6 @@ footer .social-links li a:hover:after {
   background: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  padding: 1rem;
 }
 
 .overlay-menu button {
@@ -9291,6 +9314,24 @@ footer .social-links li a:hover:after {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .overlay-menu .overlay-navbar li {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .overlay-menu .overlay-navbar li {
+    width: 70%;
+  }
+}
+
+@media (min-wdth: 992px) {
+  .overlay-menu .overlay-navbar li {
+    width: 50%;
+  }
 }
 
 .overlay-menu .overlay-navbar li {
