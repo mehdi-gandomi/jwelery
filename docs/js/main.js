@@ -28,9 +28,11 @@ function toggleMobileStyles(x) {
 }
 $(document).ready(function(){
     var x = window.matchMedia("(max-width:992px)")
-    toggleMobileStyles(x) // Call listener function at run time
     x.addListener(toggleMobileStyles);
-
+    $(window).resize(function(e){
+      console.log(e);
+      toggleMobileStyles(x) // Call listener function at run time
+    })
     $(".main-slider").slick({
       autoplay:true,
       autoplaySpeed:10000,
