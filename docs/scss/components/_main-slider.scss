@@ -78,8 +78,8 @@
     position:absolute;
     cursor: pointer;
     top:50%;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
     background:#fff;
     box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
     border:0 none;
@@ -100,34 +100,65 @@
         border-width: 0.07em 0.07em 0 0;
         content: '';
         display: inline-block;
-        height: 0.5em;
+        height: 0.7em;
         position: relative;
         transform: rotate(-45deg);
         vertical-align: top;
-        width: 0.5em;
+        width: 0.7em;
     }
   }
   
   .main-slider .NextArrow{
     
-    right: -15px;
+    right: -19px;
     
   }
   
   .main-slider .NextArrow:before{
-    left: -3px;
+    left: -2px;
 	transform: rotate(45deg);
   }
   
   .main-slider .PrevArrow{
-    left:-15px;
+    left:-19px;
   }
   
   .main-slider .PrevArrow:before{
-    left: 0.25em;
+    left: 0.2em;
 	transform: rotate(-135deg);
   }
-
+  @media(max-width:992px){
+    .main-slider .controls{
+      width:30px;
+      height:30px;
+    
+      &:before{
+          border-width: 0.05em 0.05em 0 0;
+          height: 0.5em;
+          width: 0.5em;
+      }
+    }
+    
+    .main-slider .NextArrow{
+      
+      right: -11px;
+      
+    }
+    
+    .main-slider .NextArrow:before{
+      left: -2px;
+    transform: rotate(45deg);
+    }
+    
+    .main-slider .PrevArrow{
+      left:-12px;
+    }
+    
+    .main-slider .PrevArrow:before{
+      left: 0.2em;
+    transform: rotate(-135deg);
+    } 
+  }
   @media(max-width:768px){
     .main-slider .item {
       h3{  
@@ -137,8 +168,8 @@
         font-size: 0.8rem !important;
       }
       .info{
-        padding-left: unset !important;
-        padding-right: 2rem !important;
+       display: flex;
+       justify-content: center;
       }
       .btn-cta{
         padding: 0.4rem 2rem !important;
@@ -155,14 +186,14 @@
   .main-slider .item h3{
     font:28px/55px IRANSans;
     text-transform:uppercase;
-    color:#000;
+    color:$headingColor;
     font-weight: bold;
     -webkit-animation:fadeOutRight 1s both;
             animation:fadeOutRight 1s both;
   }
   
   .main-slider .item p{
-    color:#000;
+    color:$headingColor;
     overflow:hidden;
     -webkit-animation:fadeOutLeft 1s both;
             animation:fadeOutLeft 1s both;

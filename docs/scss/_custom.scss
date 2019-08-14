@@ -95,7 +95,7 @@ body{
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid $baseColor;
     border-radius: .25rem;
     border-radius: 50%;
     display: flex;
@@ -112,7 +112,7 @@ body{
     cursor: pointer;
     background: white;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid $baseColor;
     outline: none;
     span {
       position: absolute;
@@ -120,7 +120,7 @@ body{
       height: 2px;
       top: 50%;
       left: 50%;
-      background: #262626;
+      background: $baseColor;
       border-radius: 1px;
       overflow: hidden;
       transition: all 0.3s linear;
@@ -131,7 +131,7 @@ body{
         height: 100%;
         top: 0;
         right: 0;
-        background: gray;
+        background: $baseColor;
         transition: all 0.3s linear;
       }
       &:nth-child(1) {
@@ -229,7 +229,7 @@ body{
     transition: all 0.8s;
     width: 250px;
     border-radius: 20px !important;
-    border: 1px solid #000;
+    border: 1px solid $baseColor;
     &.collapsed{
       // transition: all 0.2s;
 
@@ -290,8 +290,8 @@ body{
       background: #fff;  
       border: 1px solid rgb(97, 94, 94);
     }
-    background: #333;
-    color: #c8c89c;
+    background: $baseColor;
+    color: #fff;
     border-radius: 30px;
     padding: 0.5rem 3rem;
     font-size: 0.85rem;
@@ -318,7 +318,7 @@ body{
         margin: 0 0.5rem;
         font-size: 0.8rem;
         a{
-          color: #333;
+          color: $baseColor;
           &:hover{
             text-decoration: none;
           }
