@@ -54,6 +54,9 @@
         border-radius: 50%;
         display: flex;
         justify-content: center;
+        &.top-12{
+          top: 12%;
+        }
         &:focus{
             box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23) !important;
             outline: 0;
