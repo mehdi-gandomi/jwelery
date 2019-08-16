@@ -1,6 +1,10 @@
-$("#search-btn").click(function(){
-  $(".search-input").toggleClass("collapsed");
+$(".search-input").on("mouseenter mouseleave",function(){
+  if($(this).find("input").eq(0).is(":focus")) return;
+  $(this).toggleClass("collapsed");
 })
+$(".search-input input").on("blur",function(e){
+  $(".search-input").addClass("collapsed");
+});
 $(".menu-toggle").click(function(){
   $(".overlay-menu").toggleClass("show");
   $(".overlay-menu .menu-toggle").toggleClass("on");

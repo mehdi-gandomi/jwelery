@@ -49,6 +49,7 @@ body{
   .navbar-expand-lg{
     position: relative;
     justify-content: space-between !important;
+    margin-top: $navbarMarginTop;
     .navbar-brand{
       position: absolute;
       right: 50%;
