@@ -16,10 +16,11 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 2,
+              infinite: true,
             }
           },
           {
@@ -41,6 +42,7 @@ $(document).ready(function(){
       })
       $(".product-details__counter .minus").click(function(){
         var counterElement=$(".product-details__counter .counter-value");
-        counterElement.text(parseInt(counterElement.text())-1);
+        const newValue=parseInt(counterElement.text())-1;
+        counterElement.text(newValue > 0 ? newValue:0);
       })
 });
