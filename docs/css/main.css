@@ -8809,8 +8809,8 @@ section.content {
 }
 
 .round-button {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   padding: 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -8835,8 +8835,8 @@ section.content {
 }
 
 .menu-toggle {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   position: relative;
   cursor: pointer;
   background: white;
@@ -9041,7 +9041,7 @@ section.content {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   width: 250px;
-  border-radius: 20px !important;
+  border-radius: 24px !important;
   border: 1px solid #480001;
 }
 
@@ -9053,30 +9053,37 @@ section.content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40px !important;
-  height: 40px !important;
+  width: 48px !important;
+  height: 48px !important;
 }
 
 .search-input.collapsed input {
   position: absolute;
-  width: 100%;
+  z-index: -1;
 }
 
 .search-input.collapsed .input-group-prepend {
-  left: -5px;
+  left: -1px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
 .search-input input {
   border: 0 !important;
-  border-radius: 20px !important;
+  border-radius: 24px !important;
+  height: 100%;
+  z-index: auto;
+}
+
+.search-input input:focus, .search-input input:active {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
 }
 
 .search-input .input-group-prepend {
   position: absolute;
   left: -1px;
-  top: 2px;
+  top: 6px;
 }
 
 .search-input .input-group-prepend button {

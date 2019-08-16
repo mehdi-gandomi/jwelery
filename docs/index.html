@@ -35,10 +35,10 @@
             
                 <div class="d-flex left-nav">
                     <button class=" round-button mx-2">
-                        <i class="icon-user-outline"></i>
+                        <img src="img/icons/user.svg" alt="">
                     </button>
                     <button class=" round-button mx-2">
-                        <i class="icon-shopping-bag"></i>
+                        <img src="img/icons/cart.svg" alt="">
                     </button>
                 </div>
             
@@ -68,98 +68,159 @@
         </nav>
 
       <section class="content">
-        
-        <section class="product-details">
-                <div class="product-details__details">
-                        <h4 class="product-details__title">گوشواره طلا جومینو</h4>
-                        <p class="product-details__price">9,000,000 تومان</p>
-                        <div class="product-details__actions">
-                            <button class="btn btn-cta compacter">
-                                <i class="icon-cart"></i>
-                                    افزودن به سبد خرید
-                            </button>
-                            <div class="product-details__counter">
-                                <button class="round-button plus">
-                                    +
-                                </button>
-                                <div class="counter-value" contenteditable="true">
-                                    1
-                                </div>
-                                <button class="round-button minus">
-                                    _
-                                </button>
-                            </div>
+          <section class="slider">
+            <div class="main-slider">
+                <!-- Item -->
+                <div class="item">
+                  <div class="img-fill">
+                    <img src="img/1.jpg" alt="">
+                    <div class="info">
+                      <div>
+                        <h3>اطلاعاتی درباره طلا و جواهری</h3>
+                        <p >
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
+                        </p>
+                        <a href="#" class="btn btn-cta has-arrow">
+                            بیشتر
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item">
+                  <div class="img-fill">
+                    <img src="img/1.jpg" alt="">
+                    <div class="info">
+                        <div>
+                          <h3>اطلاعاتی درباره طلا و جواهری</h3>
+                          <p >
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
+                          </p>
+                          <a href="#" class="btn btn-cta has-arrow">
+                              بیشتر
+                          </a>
                         </div>
-                            <div class="product-details__description">
-                                <h5>اطلاعات و جزئیات</h5>
-                                <p>
-                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. 
-                                </p>
+                      </div>
+                  </div>
+                </div>
+                <!-- // Item -->
+                
+              </div>
+          </section>
+          <div class="jweleries">
+              <h4 class="text-center">جواهرات پرطرفدار</h3>
+                <div class="product-slider mt-5">
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                            <div class="product-actions">
+                                <button class="btn">
+                                    <i class="icon-cart"></i>
+                                </button>
+                                <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
                             </div>
-                            <ul class="product-details__features">
-                                <li>18 عیار همراه برلیان</li>
-                                <li>وزن: 15 گرم</li>
-                                <li>ساخت دست و میناکوبی شده</li>
-                            </ul>
-                        </div>  
-                    </div>
-            <div class="product-details__img">
-                <img src="img/details.jpg" alt="">
-            </div>
-            
-        </section>
-        <section class="features-section row">
-            <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="feature-item">
-                    <div class="feature-item__icon">
-                        <i class="icon-gift"></i>
-                    </div>
-                    <h5 class="feature-item__title my-4">
-                        هدیه برای مناسبت ها
-                    </h5>
-                    <div class="feature-item__subtitle my-3">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
-                    </div>
-                    <a href="#" class="feature-item__action ">
-                        بیشتر    
-                    </a>
+                            <img src="img/jwel-5.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">انگشتر برلیان</h5>
+                            <p class="product-price">90,000,000 تومان</p>
+                        </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-1.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-2.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-3.png" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-6.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-5.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
+                    <div class="prouct-item" >
+                        <div class="product-img">
+                                <div class="product-actions">
+                                        <button class="btn">
+                                            <i class="icon-cart"></i>
+                                        </button>
+                                        <button class="btn icon-heart-empty" onclick="addToFavorites(this)"></button>
+                                    </div>
+                            <img src="img/jwel-6.jpg" alt="">
+                        </div>
+                        <div class="product-details">
+                                <h5 class="product-title">انگشتر برلیان</h5>
+                                <p class="product-price">90,000,000 تومان</p>
+                            </div>
+                    </div>             
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="feature-item">
-                    <div class="feature-item__icon" style="padding-left: 0.4em;padding-top: 0.3em;">
-                        <i class="icon-cc-discover"></i>
-                    </div>
-                    <h5 class="feature-item__title my-4">
-                        خرید آنلاین با تخفیف
-                    </h5>
-                    <div class="feature-item__subtitle my-3">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
-                    </div>
-                    <a href="#" class="feature-item__action ">
-                        بیشتر    
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-md-6">
-                <div class="feature-item">
-                    <div class="feature-item__icon" style="padding-top: 0.2em">
-                        <i class="icon-clock"></i>
-                    </div>
-                    <h5 class="feature-item__title my-4">
-                        تحویل سریع و به موقع
-                    </h5>
-                    <div class="feature-item__subtitle my-3">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. 
-                    </div>
-                    <a href="#" class="feature-item__action ">
-                        بیشتر    
-                    </a>
-                </div>
-            </div>
-        </section>
-        <div class="recommended-products mt-5">
-            <h4 class="text-center">پیشنهادات دیگر برای شما</h3>
+          </div>
+          <div class="golds mt-5">
+            <h4 class="text-center">طلاهای پرطرفدار</h3>
                 <div class="product-slider mt-5">
                         <div class="prouct-item" >
                             <div class="product-img">
@@ -268,7 +329,40 @@
                         </div>             
                     </div>
         </div>
-        
+        <div class="collections mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="collection-item" style="background-image: url('img/earrings.jpg')">
+                        <div class="collection-off">
+                            <span>20%</span>
+                        </div>
+                        <div class="collection-info">
+                            <h5 class="collection-title">نمونه گوشواره های جدید</h5>
+                            <p class="collection-price">13/000/000 تومان</p>
+                            <button class="btn btn-cta compacter">
+                                <i class="icon-cart"></i>
+                                    افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                        <div class="collection-item" style="background-image: url('img/earrings.jpg')">
+                            <div class="collection-off">
+                                <span>20%</span>
+                            </div>
+                            <div class="collection-info">
+                                <h5 class="collection-title">نمونه گوشواره های جدید</h5>
+                                <p class="collection-price">13/000/000 تومان</p>
+                                <button class="btn btn-cta compacter">
+                                    <i class="icon-cart"></i>
+                                        افزودن به سبد خرید
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
       </section>
     </main>
     <div class="overlay-menu">
@@ -291,10 +385,10 @@
             
                 <div class="d-flex left-nav">
                     <button class=" round-button mx-2">
-                        <i class="icon-user-outline"></i>
+                        <img src="img/icons/user.svg" alt="">
                     </button>
                     <button class=" round-button mx-2">
-                        <i class="icon-shopping-bag"></i>
+                        <img src="img/icons/cart.svg" alt="">
                     </button>
                 </div>
               
@@ -365,6 +459,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/details.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

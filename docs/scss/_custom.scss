@@ -24,6 +24,7 @@ body{
   .input-group>.form-control:focus{
     z-index: 2 !important;
   }  
+
   .overlay-menu .navbar.is-mobile{
     .navbar-brand{
       top:9px !important;
@@ -90,8 +91,8 @@ body{
   }
 
   .round-button{
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     padding: 0.5rem;
     font-size: 1.25rem;
     line-height: 1;
@@ -107,8 +108,8 @@ body{
   }
   .menu-toggle {
     
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     position: relative;
     cursor: pointer;
     background: white;
@@ -229,7 +230,7 @@ body{
   .search-input{
     transition: all 0.8s;
     width: 250px;
-    border-radius: 20px !important;
+    border-radius: 24px !important;
     border: 1px solid $baseColor;
     &.collapsed{
       // transition: all 0.2s;
@@ -237,28 +238,30 @@ body{
       border-radius: 50%;
       display: flex;
       justify-content: center;
-      width: 40px !important;
-      height: 40px !important;
+      width: 48px !important;
+      height: 48px !important;
       input{
         position: absolute;
-        
-        // transition: all 0.8s;
-        width: 100%;
+        z-index: -1;
       }
       .input-group-prepend{
-      left: -5px;
+        left: -1px;
         transition: all 0.8s;
       }
     }
     input{
       border: 0 !important;
-      border-radius: 20px !important;
+      border-radius: 24px !important;
+      height: 100%;
+      z-index: auto;
+      &:focus,&:active{
+        box-shadow: unset !important;
+      }
     }
     .input-group-prepend{
-      
       position: absolute;
       left: -1px;
-      top: 2px;
+      top: 6px;
       button{
         outline: none;
         &:focus{
