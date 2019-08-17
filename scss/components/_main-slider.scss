@@ -207,7 +207,7 @@
     }
     p{
       font-size: $infoParagraphSize !important;
-      line-height: infoParagraphLineHeight;
+      line-height: $infoParagraphLineHeight;
     }
     
   }
