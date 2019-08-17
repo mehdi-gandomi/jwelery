@@ -1,5 +1,21 @@
 .main-slider{
     direction: ltr !important;
+    // width: $sliderWidth;
+    height: $sliderHeight;
+    .slick-track,.slick-list,.slick-slide,.item{
+      height: 100%;
+      width: 100%;
+      
+    }
+    .slick-slide{
+      float: left /* If RTL Make This Right */ ;
+      padding: 0;
+      >div{
+        height: 100%;
+        width: 100%;
+      }
+    }
+  
 }
 /* ==== Main CSS === */
 .img-fill{
@@ -39,10 +55,6 @@
     padding: 0!important;
   }
   
-  .slick-slide {
-    float: left /* If RTL Make This Right */ ;
-    padding: 0;
-  }
   
   /* ==== Slider Style === */
   .main-slider .item .img-fill{
@@ -59,9 +71,9 @@
     left:0px;
     background:rgba(231, 231, 231, 0.5);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    padding-right: $infoSliderPadding;
     align-items: center;
-    padding-left: 3rem;
     direction: rtl;
   }
   
@@ -78,10 +90,11 @@
     position:absolute;
     cursor: pointer;
     top:50%;
-    width:40px;
-    height:40px;
-    background:#fff;
-    box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+    width:$controlArrowsSize;
+    height:$controlArrowsSize;
+    background-color:#fff;
+    // box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     border:0 none;
     margin-top:-22.5px;
     text-align:center;
@@ -91,26 +104,29 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    &:hover{
+     background-color: $controlArrowsHoverBackground ;
+    }
     &:focus{
         box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23) !important;
         outline: 0;
     }
     &:before{
         border-style: solid;
-        border-width: 0.07em 0.07em 0 0;
+        border-width: 0.08em 0.08em 0 0;
         content: '';
         display: inline-block;
-        height: 0.7em;
+        height: 0.8em;
         position: relative;
         transform: rotate(-45deg);
         vertical-align: top;
-        width: 0.7em;
+        width: 0.8em;
     }
   }
   
   .main-slider .NextArrow{
     
-    right: -19px;
+    right: -32px;
     
   }
   
@@ -120,7 +136,7 @@
   }
   
   .main-slider .PrevArrow{
-    left:-19px;
+    left:-32px;
   }
   
   .main-slider .PrevArrow:before{
@@ -159,37 +175,41 @@
     transform: rotate(-135deg);
     } 
   }
-  @media(max-width:768px){
-    .main-slider .item {
-      h3{  
-        font:20px/45px IRANSans !important;    
-      }
-      p{
-        font-size: 0.8rem !important;
-      }
-      .info{
-       display: flex;
-       justify-content: center;
-      }
-      .btn-cta{
-        padding: 0.4rem 2rem !important;
-        font-size: 0.7rem !important;
-        &:before{
-          border-width: 0.08em 0.08em 0 0;
-          width: 0.4em;
-          height: 0.4em;
-        }
-      }
-    }
-  }
+  // @media(max-width:768px){
+  //   .main-slider .item {
+      
+      
+  //     .info{
+  //      display: flex;
+  //      justify-content: center;
+  //     }
+  //     .btn-cta{
+  //       padding: 0.4rem 2rem !important;
+      
+  //       font-size: 0.7rem !important;
+  //       &:before{
+  //         border-width: 0.08em 0.08em 0 0;
+  //         width: 0.4em;
+  //         height: 0.4em;
+  //       }
+  //     }
+  //   }
+  // }
   
-  .main-slider .item h3{
-    font:28px/55px IRANSans;
-    text-transform:uppercase;
-    color:$headingColor;
-    font-weight: bold;
-    -webkit-animation:fadeOutRight 1s both;
-            animation:fadeOutRight 1s both;
+  .main-slider .item {
+    h3{
+      font-family:IRANSans !important;    
+      font-size: $infoHeadingSize;
+      color:$headingColor;
+      font-weight: bold;
+      -webkit-animation:fadeOutRight 1s both;
+              animation:fadeOutRight 1s both;
+    }
+    p{
+      font-size: $infoParagraphSize !important;
+      line-height: infoParagraphLineHeight;
+    }
+    
   }
   
   .main-slider .item p{

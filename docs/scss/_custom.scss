@@ -12,49 +12,73 @@ body{
   }
 }
 .slider {
-    height: 450px;
+    height: $sliderHeight;
     width: 100%;
     margin-top: 2rem;
   }
-  
-  #logo {
-    width: 150px;
-    height: 70px;
+.jweleries{
+  margin-top: $popularJwelsMarginTop;
+  .head-title{
+    font-size: $popularJwelsTitleFontSize;
+    color: $popularJwelsTitleColor;
+    margin-bottom: $popularJwelsMarginBottom;
   }
+}  
+.golds{
+  margin-top: $goldsMarginTop;
+}
+ 
   .input-group>.form-control:focus{
     z-index: 2 !important;
   }  
 
-  .overlay-menu .navbar.is-mobile{
-    .navbar-brand{
-      top:9px !important;
-    }
-    .right-nav,.left-nav{
-      margin-top: 9.9rem !important;
-    }
-    .navbar{
-      height:176px !important
+  // .overlay-menu .navbar.is-mobile{
+  //   .navbar-brand{
+  //     top:9px !important;
+  //   }
+  //   .right-nav,.left-nav{
+  //     margin-top: 9.9rem !important;
+  //   }
+  //   .navbar{
+  //     height:176px !important
+  //   }
+  // }
+  // .overlay-menu .navbar.is-mobile,.navbar.is-mobile{
+  //   .navbar-brand{
+  //     top:10px;
+  //     img{
+  //       height: 125px !important;
+  //     }
+  //   }
+  //   .right-nav,.left-nav{
+  //     margin-top: 6rem ;
+  //   }
+  // }
+  main{
+    .navbar-expand-lg{
+      margin-top: $navbarMarginTop;
+      margin-bottom: $navbarMarginBottom;
     }
   }
-  .overlay-menu .navbar.is-mobile,.navbar.is-mobile{
-    .navbar-brand{
-      top:10px;
-      img{
-        height: 125px !important;
-      }
-    }
-    .right-nav,.left-nav{
-      margin-top: 6rem ;
+  .overlay-menu{
+    .navbar-expand-lg{
+      height: 200px !important;
     }
   }
   .navbar-expand-lg{
     position: relative;
     justify-content: space-between !important;
-    margin-top: $navbarMarginTop;
+
     .navbar-brand{
       position: absolute;
       right: 50%;
       transform: translateX(50%);
+      width: $logoSize;
+      height: $logoSize;
+      img{
+        max-width: 100%;
+        height: 100%;
+      }
     }
     // &.expanded-search{
     //   .navbar-brand{
@@ -68,27 +92,27 @@ body{
   section.content{
     margin-top: 4rem;
   }  
-  @media screen and (min-width: 992px) {
-    .navbar {
-        height: 130px;
-     }
-    #logo {
-      width: 150px;
-      height: 150px;
-      position: relative;
-      bottom: -20px;
-    }
-    .navbar-light .navbar-nav .nav-link {
-      padding-right: 75px;
-    }
-    #nav-left {
-      justify-content: flex-end;
-    }
-    .navbar-expand-lg .navbar-collapse{
-      flex-basis: 0 !important;
-    }
+  // @media screen and (min-width: 992px) {
+  //   .navbar {
+  //       height: 130px;
+  //    }
+  //   #logo {
+  //     width: 150px;
+  //     height: 150px;
+  //     position: relative;
+  //     bottom: -20px;
+  //   }
+  //   .navbar-light .navbar-nav .nav-link {
+  //     padding-right: 75px;
+  //   }
+  //   #nav-left {
+  //     justify-content: flex-end;
+  //   }
+  //   .navbar-expand-lg .navbar-collapse{
+  //     flex-basis: 0 !important;
+  //   }
     
-  }
+  // }
 
   .round-button{
     width: 48px;
@@ -105,6 +129,9 @@ body{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    &:hover{
+      background-color: $ctaBtnHoverBackground;
+    }
   }
   .menu-toggle {
     
@@ -116,6 +143,9 @@ body{
     border-radius: 50%;
     border: 1px solid $baseColor;
     outline: none;
+    &:hover{
+      background-color: $ctaBtnHoverBackground
+    }
     span {
       position: absolute;
       width: 20px;
@@ -215,21 +245,21 @@ body{
     }
   }
   
-@media(max-width:992px){
-  .search-input{
-    width: 200px !important;
-  }
-  .product-details{
-    text-align: center;
-  }
-  .navbar-brand{
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-  }
-}
+// @media(max-width:992px){
+//   .search-input{
+//     width: 200px !important;
+//   }
+//   .product-details{
+//     text-align: center;
+//   }
+//   .navbar-brand{
+//     margin-right: 0 !important;
+//     padding-right: 0 !important;
+//   }
+// }
   .search-input{
     transition: all 0.8s;
-    width: 250px;
+    width: 360px;
     border-radius: 24px !important;
     border: 1px solid $baseColor;
     &.collapsed{
@@ -276,6 +306,19 @@ body{
   
   .btn-cta{
     position: relative;
+    width:$ctaMoreWidth !important;
+    height: $ctaMoreHeight !important;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0.5rem 3rem;
+    font-size: $ctaBtnFontSize;
+    margin-top: $ctaBtnMarginTop;
+    background-color: $ctaBtnBackground;
+    color: $ctaBtnColor;
+    &:hover{
+      background-color: $ctaBtnHoverBackground;
+    }
     &.has-arrow{
       &:before{
         border-style: solid;
@@ -290,37 +333,30 @@ body{
         top: 50%;
       }
     }
-    &:hover{
-      background: #fff;  
-      color:$baseColor;
-    }
-    background: $baseColor;
-    color: #fff;
-    border-radius: 30px;
-    padding: 0.5rem 3rem;
-    font-size: 0.85rem;
+
     &.compacter{
       padding: 0.5rem 1rem;
     }
   }
-  @media(max-width:992px){
-    footer{
-      text-align: center;
-      .social-links{
-        margin-top: 2rem;
-      }
-    }  
+  // @media(max-width:992px){
+  //   footer{
+  //     text-align: center;
+  //     .social-links{
+  //       margin-top: 2rem;
+  //     }
+  //   }  
 
-  }
+  // }
   footer{
-    margin-top: 8rem;
+    margin-top: 120px;
+    padding: 3rem 0;
     .footer-links{
       list-style: none;
       padding: 0;
       li{
         display: inline-block;
         margin: 0 0.5rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
         a{
           color: $baseColor;
           &:hover{
@@ -330,14 +366,14 @@ body{
       }
     }
     .copyright{
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       .copyright-link{
         color: rgb(110, 102, 102);
       }
     }
     .sign{
-      width: 70px;
-      height: 70px;
+      width: 85px;
+      height: 85px;
       display: inline-block;
       img{
         max-width: 100%;
@@ -358,9 +394,9 @@ body{
           text-align: center;
           position: relative;
           z-index: 1;
-          width: 40px;
-          height: 40px;
-          padding: 0.5rem;
+          width: 48px;
+          height: 48px;
+          // padding: 0.5rem;
           font-size: 1.25rem;
           line-height: 1;
           box-shadow: 0 0 0 4px #fff;

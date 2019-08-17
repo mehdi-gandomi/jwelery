@@ -1,39 +1,48 @@
 .product-slider{
     direction: ltr !important;
-
+    .slick-slide{
+      height: 365px;
+    }
+    .product-item{
+      // width: $productImgSize;
+        height: $productImgSize;
+    }
     .product-title{
-      font-size: 1.15rem !important;
+      font-size: 20px !important;
+      margin-top: 12px;
     }
     .product-price{
-      color: $mutedText;
-      font-size: 0.75rem;
+      color: $productPriceColor;
+      font-size: 16px;
+      margin-top: 6px;
     }
     .product-img{
-        width: 200px;
-        height: 200px;
         position: relative;
-        img{
-            max-width: 100%;
-            max-height: 100%;
+        width: $productImgSize;
+        height: $productImgSize;
+        >img{
+            width: $productImgSize;
+            height: $productImgSize;
             border-radius: 20px;
         }
         .product-actions{
           position: absolute;
-          top: 12px;
-          right: 10px;
+          top: 16px;
+          right: 16px;
           .btn{
-            padding: 0 !important;
+            padding: 0;
+            margin: 0 8px;
             &:focus{
               box-shadow: unset !important;
             }
-            i{
-              font-size: 1.3rem !important;
-            }
+            
           }
         }
     }
     .product-details{
         padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
         direction: rtl !important;
         margin-top: 1rem;
     }
@@ -41,10 +50,11 @@
         position:absolute;
         cursor: pointer;
         top:40%;
-        width:40px;
-        height:40px;
+        width:52px;
+        height:52px;
         background:#fff;
-        box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+        // box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23);
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
         border:0 none;
         margin-top:-22.5px;
         text-align:center;
@@ -63,20 +73,20 @@
         }
         &:before{
             border-style: solid;
-            border-width: 0.06em 0.06em 0 0;
+            border-width: 0.07em 0.07em 0 0;
             content: '';
             display: inline-block;
-            height: 0.6em;
+            height: 0.7em;
             position: relative;
             transform: rotate(-45deg);
             vertical-align: top;
-            width: 0.6em;
+            width: 0.7em;
         }
       }
       
        .NextArrow{
         
-        right: -2px;
+        right: -25px;
         
       }
       
@@ -86,7 +96,7 @@
       }
       
       .PrevArrow{
-        left:-21px;
+        left:-28px;
       }
       
       .PrevArrow:before{
@@ -94,37 +104,38 @@
         transform: rotate(-135deg);
         top: 0.1em;
       }
-      @media(max-width: 992px) {
-        .controls{
-          width:30px;
-          height:30px;          
-          &:before{
-              border-width: 0.05em 0.05em 0 0;
-              height: 0.5em;
-              width: 0.5em;
-          }
-        }
+      // @media(max-width: 992px) {
+      //   .controls{
+      //     width:30px;
+      //     height:30px;          
+      //     &:before{
+      //         border-width: 0.05em 0.05em 0 0;
+      //         height: 0.5em;
+      //         width: 0.5em;
+      //     }
+      //   }
         
-         .NextArrow{
+      //    .NextArrow{
           
-          right: 5px;
+      //     right: 5px;
           
-        }
+      //   }
         
-         .NextArrow:before{
-          left: -3px;
-          transform: rotate(45deg);
-        }
+      //    .NextArrow:before{
+      //     left: -3px;
+      //     transform: rotate(45deg);
+      //   }
         
-        .PrevArrow{
-          left:-10px;
-        }
+      //   .PrevArrow{
+      //     left:-10px;
+      //   }
         
-        .PrevArrow:before{
-          left: 0.15em;
-          transform: rotate(-135deg);
-          top: 0.1em;
-        }
-      }
+      //   .PrevArrow:before{
+      //     left: 0.15em;
+      //     transform: rotate(-135deg);
+      //     top: 0.1em;
+      //   }
+      // }
+
 }
 

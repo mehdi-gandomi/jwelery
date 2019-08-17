@@ -11,8 +11,14 @@ $(".menu-toggle").click(function(){
   $("body").toggleClass("overlay-show");
 });
 function addToFavorites(element){
-  element.classList.toggle("icon-heart-empty");
-  element.classList.toggle("icon-heart");
+  var icon=element.querySelector("img");
+  var svg=icon.getAttribute("src");
+  if(svg.includes("favorite-outline.svg")){
+    svg=svg.replace("favorite-outline.svg","favorite-colored.svg");
+  }else{
+    svg=svg.replace("favorite-colored.svg","favorite-outline.svg");
+  }
+  icon.setAttribute("src",svg);
 }
 function toggleMobileStyles(x) {
   if (x.matches) { // If media query matches
@@ -31,11 +37,11 @@ function toggleMobileStyles(x) {
   }
 }
 $(document).ready(function(){
-    var x = window.matchMedia("(max-width:992px)")
-    x.addListener(toggleMobileStyles);
-    $(window).resize(function(e){
-      console.log(e);
-      toggleMobileStyles(x) // Call listener function at run time
-    })
+    // var x = window.matchMedia("(max-width:992px)")
+    // x.addListener(toggleMobileStyles);
+    // $(window).resize(function(e){
+    //   console.log(e);
+    //   toggleMobileStyles(x) // Call listener function at run time
+    // })
     
   })
