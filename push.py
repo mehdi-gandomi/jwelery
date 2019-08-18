@@ -10,7 +10,7 @@ dest1 = os.path.join(basePath,"docs")
 
 files = os.listdir(source)
 for f in files:
-    if f in ['.git','.gitignore','docs']:
+    if f in ['.git','.gitignore','docs',"push.py"]:
         continue
     shutil.move(os.path.join(source,f), dest1)
 os.system("git add .")

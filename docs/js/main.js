@@ -43,5 +43,17 @@ $(document).ready(function(){
     //   console.log(e);
     //   toggleMobileStyles(x) // Call listener function at run time
     // })
-    
+    $('.category-slider').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 8,
+      slidesToScroll: 8,
+      prevArrow:'<button class="controls PrevArrow"></button>',
+      nextArrow:'<button class="controls NextArrow"></button>', 
+      
+    });
+    $(".categories-wrap .nav-item").click(function(){
+      $(".categories-wrap .nav-item").removeClass("active");
+      $(this).addClass("active");
+    })
   })

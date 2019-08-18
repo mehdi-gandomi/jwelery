@@ -1,0 +1,99 @@
+.category-slider{
+    // margin: 0 -28px;
+    .slick-slide{
+        // width: 111px !important;
+        // margin: 0 28px;
+        display: flex;
+        justify-content: center;
+    }
+    direction: ltr !important;
+    .category-item{
+        
+        width: $categoryItemSize !important;
+        height: $categoryItemSize;    
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid $baseColor;
+        border-radius: 50%;
+        display: flex !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:active,&:focus{
+            outline: none;
+            box-shadow: unset !important;
+        }
+    }
+    .category-icon{
+        width: 60px;
+        height: 60px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+    }
+
+
+    .controls{
+        position:absolute;
+        cursor: pointer;
+        top:40%;
+        width:48px;
+        height:48px;
+        background:#fff;
+        border:1px solid $baseColor !important;
+        margin-top:-22.5px;
+        text-align:center;
+        color:#000;
+        z-index:5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        &:hover{
+            background-color: $controlArrowsHoverBackground;
+        }
+        &:focus{
+            box-shadow: unset !important;
+            outline: 0;
+        }
+        &:before{
+            border-style: solid;
+            border-width: 0.07em 0.07em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.7em;
+            position: relative;
+            transform: rotate(-45deg);
+            vertical-align: top;
+            width: 0.7em;
+        }
+        &.NextArrow{
+        
+            right: -48px;
+            
+          }
+          
+           &.NextArrow:before{
+            left: -3px;
+            transform: rotate(45deg);
+          }
+          
+          &.PrevArrow{
+            left:-48px;
+          }
+          
+          &.PrevArrow:before{
+            left: 0.15em;
+            transform: rotate(-135deg);
+            top: 0.1em;
+          }
+      }
+      
+       
+}
