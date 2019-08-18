@@ -56,15 +56,16 @@ body{
   // }
   main{
     .navbar-expand-lg{
-      margin-top: $navbarMarginTop;
+      margin-top: $navbarMarginTop+50px;
       margin-bottom: $navbarMarginBottom;
     }
+  
   }
-  .overlay-menu{
-    .navbar-expand-lg{
-      height: 200px !important;
-    }
-  }
+  // .overlay-menu{
+  //   .navbar-expand-lg{
+  //     height: 200px !important;
+  //   }
+  // }
   .navbar-expand-lg{
     position: relative;
     justify-content: space-between !important;

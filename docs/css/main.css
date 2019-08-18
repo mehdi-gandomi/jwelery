@@ -1,42 +1,10 @@
 @charset "UTF-8";
 @font-face {
-  font-family: IRANSans;
+  font-family: Yekan;
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
-  src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+  src: url("../fonts/Yekan/Yekan.eot");
+  src: url("../fonts/Yekan/Yekan.eot?#iefix") format("embedded-opentype"), url("../fonts/Yekan/Yekan.woff") format("woff"), url("../fonts/Yekan/Yekan.ttf") format("truetype");
 }
 
 /*!
@@ -96,7 +64,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: IRANSans, Tahoma;
+  font-family: Yekan, Tahoma;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -4746,7 +4714,7 @@ input[type="button"].btn-block {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: IRANSans, Tahoma;
+  font-family: Yekan, Tahoma;
   font-style: normal;
   font-weight: 400;
   line-height: 1.75;
@@ -8708,12 +8676,8 @@ body {
 }
 
 main .navbar-expand-lg {
-  margin-top: 160px;
+  margin-top: 210px;
   margin-bottom: 45px;
-}
-
-.overlay-menu .navbar-expand-lg {
-  height: 200px !important;
 }
 
 .navbar-expand-lg {
@@ -8728,8 +8692,8 @@ main .navbar-expand-lg {
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 
 .navbar-expand-lg .navbar-brand img {
@@ -9270,6 +9234,7 @@ footer .social-links li a:hover:after {
   background: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  padding-top: 45px;
 }
 
 .overlay-menu button {
@@ -9284,15 +9249,14 @@ footer .social-links li a:hover:after {
 }
 
 .overlay-menu .navbar-brand {
-  top: 50px !important;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 
 .overlay-menu .navbar-brand img {
-  width: 150px !important;
-  max-width: 150px !important;
-  height: 150px !important;
+  width: 160px !important;
+  max-width: 160px !important;
+  height: 160px !important;
 }
 
 .overlay-menu .left-nav, .overlay-menu .right-nav {
@@ -9641,7 +9605,7 @@ footer .social-links li a:hover:after {
 }
 
 .main-slider .item h3 {
-  font-family: IRANSans !important;
+  font-family: Yekan !important;
   font-size: 32px;
   color: #1e1e1e;
   font-weight: bold;
@@ -9869,7 +9833,6 @@ footer .social-links li a:hover:after {
 
 .product-slider .product-title {
   font-size: 20px !important;
-  margin-top: 12px;
 }
 
 .product-slider .product-price {
@@ -9916,7 +9879,7 @@ footer .social-links li a:hover:after {
       -ms-flex-direction: column;
           flex-direction: column;
   direction: rtl !important;
-  margin-top: 1rem;
+  margin-top: 12px;
 }
 
 .product-slider .controls {
@@ -10090,6 +10053,19 @@ footer .social-links li a:hover:after {
   color: #3a3a3a;
   font-size: 16px;
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .collections .collection-item .btn-cta {
@@ -10108,6 +10084,41 @@ footer .social-links li a:hover:after {
 
 .collections .collection-item .btn-cta i {
   margin-left: 0.5rem;
+}
+
+.categories-wrap {
+  margin-top: 90px;
+  border-bottom: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categories-wrap .nav-item {
+  width: 64px;
+  text-align: center;
+}
+
+.categories-wrap .nav-item.active {
+  border-bottom: 2px solid #480001;
+}
+
+.categories-wrap .nav-item:nth-child(odd) {
+  margin: 0 0 0 27.5px;
+}
+
+.categories-wrap .nav-item:nth-child(even) {
+  margin: 0 27.5px 0 0;
+}
+
+.categories-wrap .nav-link {
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 0 10px 0 !important;
+  color: #480001;
 }
 
 .product-details {

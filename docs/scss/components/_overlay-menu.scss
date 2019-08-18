@@ -9,7 +9,7 @@
     pointer-events: none;
     background: rgba(255, 255, 255, 0.9);
     transition: all 0.5s;
-    
+    padding-top: 45px;    
 
     button{
         border: 1px solid #ebe9e9 !important;
@@ -23,13 +23,12 @@
     //     height: 160px !important;
     // }
     .navbar-brand{
-        top:50px !important;
-        width: 150px;
-        height: 150px;
+        width: $logoSize;
+        height: $logoSize;
         img{
-            width: 150px !important;
-            max-width: 150px !important;
-        height: 150px !important;
+            width: $logoSize !important;
+            max-width: $logoSize !important;
+            height: $logoSize !important;
         }
     }
     .left-nav,.right-nav{

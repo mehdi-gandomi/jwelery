@@ -1,0 +1,26 @@
+.categories-wrap{
+    margin-top: $categoriesWrapMarginTop;
+    border-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    .nav-item{
+        &.active{
+            border-bottom: 2px solid $baseColor;
+        }
+        &:nth-child(odd){
+            margin: 0 0 0 $categoryLinkMarginX/2;
+        }
+        &:nth-child(even){
+            margin: 0 $categoryLinkMarginX/2 0 0;
+        }
+        width: 64px;
+        text-align: center;
+    }
+
+    .nav-link{
+        border: 0 !important;
+        background: transparent !important;
+        padding: 0 0 10px 0 !important;        
+        color: $baseColor;
+    }
+}
