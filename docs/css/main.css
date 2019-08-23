@@ -8709,6 +8709,16 @@ main .navbar-expand-lg {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .navbar-expand-lg {
+    margin-bottom: 145px !important;
+  }
+  .right-nav, .left-nav {
+    position: relative;
+    top: 100px;
+  }
+}
+
 .navbar-toggler {
   margin-top: 15px;
 }
@@ -9585,6 +9595,30 @@ footer .social-links li a:hover:after {
   direction: rtl;
 }
 
+@media (max-width: 768px) {
+  .slider {
+    height: 400px !important;
+  }
+  .main-slider {
+    height: 400px !important;
+  }
+  .main-slider .item .img-fill .info {
+    padding-right: 30px !important;
+  }
+  .main-slider .item .img-fill .info h3 {
+    font-size: 25px !important;
+  }
+  .main-slider .item .img-fill .info p {
+    font-size: 14px !important;
+  }
+  .main-slider .btn-cta {
+    padding: 0.4rem 1.5rem !important;
+    font-size: 14px !important;
+    width: 100px !important;
+    height: 38px !important;
+  }
+}
+
 .main-slider .item .info > div {
   display: inline-block !important;
   vertical-align: middle;
@@ -10052,7 +10086,7 @@ footer .social-links li a:hover:after {
   top: 0.1em;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .product-slider .controls {
     width: 30px;
     height: 30px;
@@ -10063,7 +10097,36 @@ footer .social-links li a:hover:after {
     width: 0.5em;
   }
   .product-slider .NextArrow {
-    right: 5px;
+    right: -10px;
+  }
+  .product-slider .NextArrow:before {
+    left: -3px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .product-slider .PrevArrow {
+    left: -16px;
+  }
+  .product-slider .PrevArrow:before {
+    left: 0.15em;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: 0.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-slider .controls {
+    width: 30px;
+    height: 30px;
+  }
+  .product-slider .controls:before {
+    border-width: 0.05em 0.05em 0 0;
+    height: 0.5em;
+    width: 0.5em;
+  }
+  .product-slider .NextArrow {
+    right: -15px;
   }
   .product-slider .NextArrow:before {
     left: -3px;
