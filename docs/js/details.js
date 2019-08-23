@@ -4,8 +4,8 @@ $(document).ready(function(){
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        prevArrow:'<button class="controls PrevArrow top-12"></button>',
-        nextArrow:'<button class="controls NextArrow top-12"></button>', 
+        prevArrow:'<button class="controls PrevArrow "></button>',
+        nextArrow:'<button class="controls NextArrow " style="right:-28px"></button>', 
         responsive: [
           {
             breakpoint: 1024,

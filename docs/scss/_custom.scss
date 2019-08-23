@@ -52,13 +52,12 @@ body{
     //   margin-top: 6rem ;
     // }
   }
-  main{
-    .navbar-expand-lg{
-      // margin-top: $navbarMarginTop+50px;
-      padding-top:4rem;
-      margin-bottom: $navbarMarginBottom;
-    }
-  
+
+  .navbar-expand-lg{
+    padding: 5rem 0 $navbarMarginBottom 0;
+  }
+  .navbar-brand{
+    margin-right: 0 !important;
   }
   // .overlay-menu{
   //   .navbar-expand-lg{
@@ -76,9 +75,10 @@ body{
       width: $logoSize;
       height: $logoSize;
       img{
-        max-width: 100%;
-        height: 100%;
-      }
+        width: $logoSize !important;
+        max-width: $logoSize !important;
+        height: $logoSize !important;
+    }
     }
   
     // &.expanded-search{
@@ -88,7 +88,7 @@ body{
     // }
   }
   @media (max-width:768px) {
-    .navbar-expand-lg{
+    main .navbar-expand-lg{
       margin-bottom: 145px !important;
     }
     .right-nav,.left-nav{
@@ -335,6 +335,17 @@ body{
     margin-top: $ctaBtnMarginTop;
     background-color: $ctaBtnBackground;
     color: $ctaBtnColor;
+    &.btn-reversed{
+      background-color: $baseColor;
+      color: #fff;
+      &:hover{
+        background-color: #fff;
+        color: $ctaBtnColor;
+        svg g{
+          stroke: $baseColor !important;
+        }
+      }
+    }
     &:hover{
       background-color: $ctaBtnHoverBackground;
     }

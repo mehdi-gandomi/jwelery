@@ -9,7 +9,7 @@
     pointer-events: none;
     background: rgba(255, 255, 255, 0.9);
     transition: all 0.5s;
-    padding-top: 45px;    
+    // padding-top: 45px;    
 
     button{
         border: 1px solid #ebe9e9 !important;
@@ -21,17 +21,46 @@
     }
     .navbar{
         height: 160px !important;
+        padding-top: 3rem !important;
+    }
+    @media(max-width:768px){
+        .navbar-brand{
+            top: 22px;
+        }
+        .left-nav,.right-nav{
+            top: 120px;
+        }
+    
     }
     .navbar-brand{
-        top:15px !important;
+        // top:15px !important;
+        
         img{
             width: $logoSize !important;
             max-width: $logoSize !important;
             height: $logoSize !important;
         }
     }
-    .left-nav,.right-nav{
-        margin-top: 2rem;
+    // .left-nav,.right-nav{
+    //     margin-top: 2rem;
+    // }
+    @media(max-width:768px){
+        .category-slider {
+            .controls{
+                width: 38px !important;
+                height: 38px !important;
+                top: 50% !important;
+            }
+            .NextArrow{
+                right: -15px !important;
+            }
+            .PrevArrow{
+                left: -15px !important;
+            }       
+            // .slick-slide{
+            //     width: 100px !important;
+            // }
+        }
     }
     .overlay-navbar{
         list-style: none;
@@ -40,21 +69,9 @@
         align-items: center;
         flex-direction: column;
         margin-top: 4rem;
-        @media(max-width:768px){
-            li{
-                width: 90%;
-            }
-        }
-        @media(min-width:768px) and (max-width:992px){
-            li{
-                width: 70%;
-            }
-        }////
-        @media(min-wdth:992px){
-            li{
-                width: 50%;
-            }
-        }
+        
+        
+
         li{
             margin: 0.5rem 0;
             width: 50%;
