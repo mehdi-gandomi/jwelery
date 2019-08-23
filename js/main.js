@@ -44,7 +44,7 @@ $(document).ready(function(){
     //   toggleMobileStyles(x) // Call listener function at run time
     // })
     $('.category-slider').slick({
-      infinite: true,
+      // infinite: true,
       speed: 300,
       slidesToShow: 8,
       slidesToScroll: 8,

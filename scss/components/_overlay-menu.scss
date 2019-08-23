@@ -19,12 +19,11 @@
         opacity: 1;
         pointer-events: all;
     }
-    // .navbar{
-    //     height: 160px !important;
-    // }
+    .navbar{
+        height: 160px !important;
+    }
     .navbar-brand{
-        width: $logoSize;
-        height: $logoSize;
+        top:15px !important;
         img{
             width: $logoSize !important;
             max-width: $logoSize !important;
@@ -40,22 +39,22 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 1rem;
-        // @media(max-width:768px){
-        //     li{
-        //         width: 90%;
-        //     }
-        // }
-        // @media(min-width:768px) and (max-width:992px){
-        //     li{
-        //         width: 70%;
-        //     }
-        // }////
-        // @media(min-wdth:992px){
-        //     li{
-        //         width: 50%;
-        //     }
-        // }
+        margin-top: 4rem;
+        @media(max-width:768px){
+            li{
+                width: 90%;
+            }
+        }
+        @media(min-width:768px) and (max-width:992px){
+            li{
+                width: 70%;
+            }
+        }////
+        @media(min-wdth:992px){
+            li{
+                width: 50%;
+            }
+        }
         li{
             margin: 0.5rem 0;
             width: 50%;
