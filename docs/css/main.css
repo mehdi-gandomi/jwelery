@@ -1,5 +1,45 @@
 @charset "UTF-8";
 @font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+  src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+
+@font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir.eot");
   src: url("../fonts/vazir/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/vazir/Vazir.woff") format("woff"), url("../fonts/vazir/Vazir.ttf") format("truetype");
@@ -91,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   line-height: 1.75;
 }
 
@@ -511,8 +551,6 @@ mark,
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -525,14 +563,12 @@ mark,
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -3778,7 +3814,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 0;
 }
 
 .navbar > .container,
@@ -3798,9 +3834,9 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.28125rem;
-  padding-bottom: 0.28125rem;
-  margin-right: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -8646,7 +8682,6 @@ body {
 .slider {
   height: 660px;
   width: 100%;
-  margin-top: 2rem;
 }
 
 .jweleries {
@@ -8683,10 +8718,6 @@ body {
   height: 125px !important;
 }
 
-.navbar-expand-lg {
-  padding: 5rem 0 45px 0;
-}
-
 .navbar-brand {
   margin-right: 0 !important;
 }
@@ -8700,17 +8731,19 @@ body {
 
 .navbar-expand-lg .navbar-brand {
   position: absolute;
+  top: 45px;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
-  width: 160px;
-  height: 160px;
 }
 
 .navbar-expand-lg .navbar-brand img {
-  width: 160px !important;
   max-width: 160px !important;
-  height: 160px !important;
+  max-height: 160px !important;
+}
+
+.navbar-expand-lg .right-nav, .navbar-expand-lg .left-nav {
+  margin-top: 83px;
 }
 
 @media (max-width: 768px) {
@@ -8728,18 +8761,12 @@ body {
 }
 
 section.content {
-  margin-top: 4rem;
+  margin-top: 83px;
 }
 
 @media screen and (min-width: 992px) {
   .navbar {
     height: 130px;
-  }
-  #logo {
-    width: 150px;
-    height: 150px;
-    position: relative;
-    bottom: -20px;
   }
   .navbar-light .navbar-nav .nav-link {
     padding-right: 75px;
@@ -9039,10 +9066,12 @@ section.content {
 
 .search-input .input-group-prepend {
   position: absolute;
+  pointer-events: none;
   left: -1px;
 }
 
 .search-input .input-group-prepend button {
+  pointer-events: all;
   outline: none;
 }
 
@@ -9755,12 +9784,10 @@ footer .social-links li a:hover:after {
 }
 
 .main-slider .item h3 {
-  font-family: Yekan !important;
+  font-family: IRANSans !important;
   font-size: 32px;
   color: #1e1e1e;
   font-weight: bold;
-  -webkit-animation: fadeOutRight 1s both;
-  animation: fadeOutRight 1s both;
 }
 
 .main-slider .item p {
@@ -9768,34 +9795,36 @@ footer .social-links li a:hover:after {
   line-height: 1.75;
 }
 
-.main-slider .item p {
+.main-slider .item .btn-cta {
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-slider .slick-slide.slick-active p, .main-slider .slick-slide.slick-active h3 {
+  -webkit-animation: slideInRight 1s ease both;
+          animation: slideInRight 1s ease both;
+}
+
+.main-slider .slick-slide.slick-active p {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.main-slider .slick-slide.slick-active h3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.main-slider .slick-slide.slick-active .btn-cta {
+  -webkit-animation: flipInX 1s ease 1.5s both;
+          animation: flipInX 1s ease 1.5s both;
+}
+
+.main-slider .slick-slide p {
   color: #1e1e1e;
   overflow: hidden;
-  -webkit-animation: fadeOutLeft 1s both;
-  animation: fadeOutLeft 1s both;
-}
-
-.main-slider .item.slick-active h3 {
-  -webkit-animation: fadeInDown 1s both 1s;
-  animation: fadeInDown 1s both 1s;
-}
-
-.main-slider .item.slick-active h5 {
-  -webkit-animation: fadeInLeft 1s both 1.5s;
-  animation: fadeInLeft 1s both 1.5s;
-}
-
-.main-slider .item .img-fill img {
-  -webkit-transform: scale(0) rotate(0deg);
-  transform: scale(0) rotate(0deg);
-  opacity: 0;
-  -webkit-animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-.main-slider .slick-active .img-fill img {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ==== Slider Transition === */
@@ -9821,69 +9850,85 @@ footer .social-links li a:hover:after {
  * Generated by Animista on 2019-8-12 18:18:17
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation slide-in-right
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+    visibility: visible;
   }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(150%, 0, 0);
+    transform: translate3d(150%, 0, 0);
+    visibility: visible;
   }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2019-8-12 18:36:6
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation slide-out-left
- * ----------------------------------------
- */
-@-webkit-keyframes slide-out-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
-    opacity: 0;
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes slide-out-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
-  100% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
     opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
   }
 }
 

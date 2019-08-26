@@ -14,7 +14,7 @@ body{
 .slider {
     height: $sliderHeight;
     width: 100%;
-    margin-top: 2rem;
+  
   }
 .jweleries{
   margin-top: $popularJwelsMarginTop;
@@ -53,9 +53,9 @@ body{
     // }
   }
 
-  .navbar-expand-lg{
-    padding: 5rem 0 $navbarMarginBottom 0;
-  }
+  // .navbar-expand-lg{
+  //   padding: 5rem 0 $navbarMarginBottom 0;
+  // }
   .navbar-brand{
     margin-right: 0 !important;
   }
@@ -70,22 +70,20 @@ body{
 
     .navbar-brand{
       position: absolute;
+      top:$navbrandMarginY;
       right: 50%;
       transform: translateX(50%);
-      width: $logoSize;
-      height: $logoSize;
+      // width: $logoSize;
+      // height: $logoSize;
       img{
-        width: $logoSize !important;
+        // width: $logoSize !important;
         max-width: $logoSize !important;
-        height: $logoSize !important;
+        max-height: $logoSize !important;
     }
     }
-  
-    // &.expanded-search{
-    //   .navbar-brand{
-    //     margin-right: -173px;
-    //   }
-    // }
+    .right-nav,.left-nav{
+      margin-top: 83px;
+    }
   }
   @media (max-width:768px) {
     main .navbar-expand-lg{
@@ -101,18 +99,18 @@ body{
     margin-top: 15px;
   }
   section.content{
-    margin-top: 4rem;
+    margin-top: 83px;
   }  
   @media screen and (min-width: 992px) {
     .navbar {
         height: 130px;
      }
-    #logo {
-      width: 150px;
-      height: 150px;
-      position: relative;
-      bottom: -20px;
-    }
+    // #logo {
+    //   width: 150px;
+    //   height: 150px;
+    //   position: relative;
+    //   bottom: -20px;
+    // }
     .navbar-light .navbar-nav .nav-link {
       padding-right: 75px;
     }
@@ -306,9 +304,11 @@ body{
     }
     .input-group-prepend{
       position: absolute;
+      pointer-events: none;
       left: -1px;
       // top: 4px;
       button{
+        pointer-events: all;
         outline: none;
         &:focus{
           box-shadow: unset !important;
