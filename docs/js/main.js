@@ -17,15 +17,15 @@ $(".menu-toggle").click(function(){
   $("body").toggleClass("overlay-show");
 });
 function addToFavorites(element){
-  // var icon=element.querySelector("img");
-  // var svg=icon.getAttribute("src");
-  // if(svg.includes("favorite-outline.svg")){
-  //   svg=svg.replace("favorite-outline.svg","favorite-colored.svg");
-  // }else{
-  //   svg=svg.replace("favorite-colored.svg","favorite-outline.svg");
-  // }
-  // icon.setAttribute("src",svg);
-  element.classList.toggle("active")
+  var icon=element.querySelector("img");
+  var svg=icon.getAttribute("src");
+  if(svg.includes("favorite-outline.svg")){
+    svg=svg.replace("favorite-outline.svg","favorite-colored.svg");
+  }else{
+    svg=svg.replace("favorite-colored.svg","favorite-outline.svg");
+  }
+  icon.setAttribute("src",svg);
+  // element.classList.toggle("active")
 }
 function toggleMobileStyles(x) {
   if (x.matches) { // If media query matches

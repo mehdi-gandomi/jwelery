@@ -130,7 +130,7 @@
      background-color: $controlArrowsHoverBackground ;
     }
     &:focus{
-        box-shadow: 0 0px 0px rgba(0,0,0,0.19), 0 2px 4px rgba(0,0,0,0.23) !important;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
         outline: 0;
     }
     &:before{
@@ -232,6 +232,8 @@
     }
     .btn-cta{
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+      width: 140px !important;
+      height: 48px !important;
     }
     
   }
