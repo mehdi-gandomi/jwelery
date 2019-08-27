@@ -43,6 +43,7 @@
     }
     .product-item{
       width: 95% !important;
+      max-width: 277px;
       margin: 0 0.5rem;
       &__details{
         padding-right: 0.5rem;
@@ -94,7 +95,7 @@
       
        .NextArrow{
         
-        right: -18px;
+        right: -26px;
         
       }
       
@@ -104,7 +105,7 @@
       }
       
       .PrevArrow{
-        left:-28px;
+        left:-25px;
       }
       
       .PrevArrow:before{

@@ -297,6 +297,8 @@ body{
       border: 0 !important;
       border-radius: 24px !important;
       height: 100%;
+      font-family: IRANSans;
+      font-size: 12px;
       z-index: auto;
       &:focus,&:active{
         box-shadow: unset !important;
@@ -329,12 +331,12 @@ body{
     height: $ctaMoreHeight !important;
     display: flex;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 24px;
     padding: 0.5rem 1em;
     font-size: $ctaBtnFontSize;
     margin-top: $ctaBtnMarginTop;
     background-color: $ctaBtnBackground;
-    color: $ctaBtnColor;
+    color: $baseColor;
     &.btn-reversed{
       background-color: $baseColor;
       color: #fff;
@@ -348,6 +350,7 @@ body{
     }
     &:hover{
       background-color: $ctaBtnHoverBackground;
+      color:$ctaBtnColor;
     }
     &.has-arrow{
       &:before{

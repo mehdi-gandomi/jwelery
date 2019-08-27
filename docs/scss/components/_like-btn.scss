@@ -1,0 +1,129 @@
+label.toggle-heart {
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+  }
+  label.toggle-heart:before, label.toggle-heart:after {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    content: '';
+  }
+  label.toggle-heart:before {
+    box-sizing: border-box;
+    margin: -1.5rem;
+    border: solid 1.5rem #e2264d;
+    width: 3rem;
+    height: 3rem;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  label.toggle-heart:after {
+    margin: -0.1875rem;
+    width: 0.375rem;
+    height: 0.375rem;
+    box-shadow: 0.32476rem -2.0625rem 0 -0.1875rem #ff8080, -0.32476rem -1.6875rem 0 -0.1875rem #ffed80, 1.81501rem -1.03204rem 0 -0.1875rem #ffed80, 1.11686rem -1.30605rem 0 -0.1875rem #a4ff80, 1.93852rem 0.77557rem 0 -0.1875rem #a4ff80, 1.71746rem 0.05889rem 0 -0.1875rem #80ffc8, 0.60229rem 1.99916rem 0 -0.1875rem #80ffc8, 1.02478rem 1.37948rem 0 -0.1875rem #80c8ff, -1.18748rem 1.71734rem 0 -0.1875rem #80c8ff, -0.43958rem 1.66129rem 0 -0.1875rem #a480ff, -2.08305rem 0.14233rem 0 -0.1875rem #a480ff, -1.57293rem 0.69212rem 0 -0.1875rem #ff80ed, -1.41004rem -1.53985rem 0 -0.1875rem #ff80ed, -1.52182rem -0.79823rem 0 -0.1875rem #ff8080;
+  }
+  label.toggle-heart span {
+    font-size: 25px;
+    color: #888;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  label.toggle-heart.active span {
+    -webkit-filter: none;
+            filter: none;
+    color: #e2264d;
+    -webkit-animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+            animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+  }
+  label.toggle-heart.active:before, label.toggle-heart.active:after {
+    -webkit-animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+            animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  label.toggle-heart.active:before {
+    will-change: transform, border-width, border-color;
+    -webkit-animation-name: bubble;
+            animation-name: bubble;
+  }
+  label.toggle-heart.active:after {
+    will-change: opacity, box-shadow;
+    -webkit-animation-name: sparkles;
+            animation-name: sparkles;
+  }
+  label.toggle-heart:focus {
+    text-shadow: 0 0 3px white,  0 1px 1px white, 0 -1px 1px white,  1px 0 1px white, -1px 0 1px white;
+  }
+  
+  @-webkit-keyframes heart {
+    0%, 17.5% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      font-size: 0;
+    }
+  }
+  
+  @keyframes heart {
+    0%, 17.5% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      font-size: 0;
+    }
+  }
+  @-webkit-keyframes bubble {
+    15% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      border-color: #cc8ef5;
+      border-width: 1.5rem;
+    }
+    30%, 100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      border-color: #cc8ef5;
+      border-width: 0;
+    }
+  }
+  @keyframes bubble {
+    15% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      border-color: #cc8ef5;
+      border-width: 1.5rem;
+    }
+    30%, 100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      border-color: #cc8ef5;
+      border-width: 0;
+    }
+  }
+  @-webkit-keyframes sparkles {
+    0%, 20% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+      box-shadow: 0.32476rem -1.6875rem 0 0rem #ff8080, -0.32476rem -1.3125rem 0 0rem #ffed80, 1.52182rem -0.79823rem 0 0rem #ffed80, 0.82367rem -1.07224rem 0 0rem #a4ff80, 1.57293rem 0.69212rem 0 0rem #a4ff80, 1.35186rem -0.02456rem 0 0rem #80ffc8, 0.43958rem 1.66129rem 0 0rem #80ffc8, 0.86207rem 1.04161rem 0 0rem #80c8ff, -1.02478rem 1.37948rem 0 0rem #80c8ff, -0.27687rem 1.32343rem 0 0rem #a480ff, -1.71746rem 0.05889rem 0 0rem #a480ff, -1.20733rem 0.60868rem 0 0rem #ff80ed, -1.11686rem -1.30605rem 0 0rem #ff80ed, -1.22864rem -0.56442rem 0 0rem #ff8080;
+    }
+  }
+  @keyframes sparkles {
+    0%, 20% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+      box-shadow: 0.32476rem -1.6875rem 0 0rem #ff8080, -0.32476rem -1.3125rem 0 0rem #ffed80, 1.52182rem -0.79823rem 0 0rem #ffed80, 0.82367rem -1.07224rem 0 0rem #a4ff80, 1.57293rem 0.69212rem 0 0rem #a4ff80, 1.35186rem -0.02456rem 0 0rem #80ffc8, 0.43958rem 1.66129rem 0 0rem #80ffc8, 0.86207rem 1.04161rem 0 0rem #80c8ff, -1.02478rem 1.37948rem 0 0rem #80c8ff, -0.27687rem 1.32343rem 0 0rem #a480ff, -1.71746rem 0.05889rem 0 0rem #a480ff, -1.20733rem 0.60868rem 0 0rem #ff80ed, -1.11686rem -1.30605rem 0 0rem #ff80ed, -1.22864rem -0.56442rem 0 0rem #ff8080;
+    }
+  }
+  
