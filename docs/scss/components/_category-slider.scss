@@ -8,6 +8,16 @@
     }
     direction: ltr !important;
     .category-item{
+        color: $baseColor;
+        text-align: center;
+        &:active,&:focus,&:hover{
+            outline: none;
+            box-shadow: unset !important;
+            text-decoration: none;
+        }
+
+    }
+    .category-icon{
         
         width: $categoryItemSize !important;
         height: $categoryItemSize;    
@@ -24,21 +34,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &:active,&:focus{
-            outline: none;
-            box-shadow: unset !important;
-        }
-    }
-    .category-icon{
-        width: 60px;
-        height: 60px;
+     
+    
         img{
-            max-width: 100%;
-            max-height: 100%;
+            width: 60px;
+            height: 60px;
             margin: auto;
         }
     }
-
+    .category-title{
+        font-size: 14px;
+        font-family: IRANSans;
+        margin-top: 16px;
+    }
 
     .controls{
         position:absolute;
