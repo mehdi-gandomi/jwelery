@@ -397,10 +397,14 @@ body{
     .footer-links{
       list-style: none;
       padding: 0;
+      margin: 0;
       li{
         display: inline-block;
-        margin: 0 0.5rem;
-        font-size: 1rem;
+        margin: 0 1rem;
+        font-size: 14px;
+        &:first-child{
+          margin-right: 0 ;
+        }
         a{
           color: $baseColor;
           &:hover{
@@ -410,14 +414,23 @@ body{
       }
     }
     .copyright{
-      font-size: 0.9rem;
+      font-size: 14px;
+      margin-top: 24px;
       .copyright-link{
-        color: rgb(110, 102, 102);
+        color: $headingColor;
       }
     }
     .sign{
-      width: 70px;
-      height: 70px;
+      // width: 110px;
+      // height: 70px;
+      &:first-child{
+        width: 88px;
+        height: 116.3px;
+      }
+      &:last-child{
+        width: 110px;
+        height: 119.7px;
+      }
       display: inline-block;
       img{
         max-width: 100%;

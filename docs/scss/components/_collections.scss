@@ -17,44 +17,22 @@
       top: 0;
       left: 0;
   }
-  .collection-off {
-      background: #333;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 4px;
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      text-align: center;
-      z-index: 6;
-      span{
-          z-index: 7;
-          font-size: 0.8rem;
-          color: #dbcdcd;
-      }
-    }
-    .collection-off:before,
-    .collection-off:after {
-      content: "";
-      color: #fff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 50px;
-      width: 50px;
-      border-radius: 4px;
-      background: #333;
-    }
-    .collection-off:before {
-      transform: rotate(30deg);
-    }
-    .collection-off:after {
-      transform: rotate(60deg);
-    }
+   .collection-off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: url("../img/icons/off.svg");
+    background-size: cover;
+    top: 24px;
+    right: 24px;
+    width: 69.9px;
+    height: 69.9px;
+    z-index: 6;
+    font-size: 20px;
+    color: #fff;
+
+   }
   .collection-info{
       position: absolute;
       bottom: 36px;
@@ -69,14 +47,23 @@
         display: flex;
         justify-content: center;
         margin-top: 16px;
+        font-size: 15px;
+        font-weight: 300;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        width: 150px;
+        height: 48px;
       }
   }
   .collection-title{
-      font-weight: bold;
+    font-weight: 500;
+    font-size: 28px;
+    color: $headingColor;
   }
   .collection-price{
-      color: #a0a0a0;
-      font-size: 0.8rem;
+      color: $lighterBlack;
+      font-family: IRANSans;
+      font-size: 16px;
       margin: 10px auto 0 auto;
   }
 }
