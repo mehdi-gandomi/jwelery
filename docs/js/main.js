@@ -1,11 +1,21 @@
-$(".search-input").on("mouseenter mouseleave",function(e){
-  if($(this).find("input").is(":focus"))return;
-  $(this).toggleClass("collapsed");
-
+var mouseIsOverSearch=false;
+$(".search-input").on("mouseenter",function(e){
+  $(this).removeClass("collapsed");
+  mouseIsOverSearch=true;
 })
+// $(".search-input").on("mouseleave",function(e){
+//   if($(this).find("input").is(":focus"))return;
+//   $(this).addClass("collapsed");
+//   mouseIsOverSearch=false;
+
+// })
 $(".search-input input").on("blur",function(e){
-  $(".search-input").addClass("collapsed");
+  console.log(e);
+  // if(!mouseIsOverSearch){
+    $(".search-input").addClass("collapsed");
+  // }
 });
+
 
 $(".menu-toggle").click(function(){
   $(".overlay-menu").toggleClass("show");
