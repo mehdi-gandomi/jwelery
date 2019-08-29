@@ -1,7 +1,10 @@
 var mouseIsOverSearch=false;
 $(".search-input").on("mouseenter",function(e){
-  $(this).removeClass("collapsed");
-  mouseIsOverSearch=true;
+  // setTimeout(function(){
+    $(this).removeClass("collapsed");
+  // },0);
+  // $(".search-input input").focus();
+  // mouseIsOverSearch=true;
 })
 // $(".search-input").on("mouseleave",function(e){
 //   if($(this).find("input").is(":focus"))return;

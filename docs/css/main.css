@@ -8807,8 +8807,8 @@ section.content {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .round-button:hover {
@@ -8824,6 +8824,8 @@ section.content {
   border-radius: 50%;
   border: 1px solid #480001;
   outline: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .menu-toggle:hover {
@@ -9023,8 +9025,8 @@ section.content {
 }
 
 .search-input {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 360px;
   border-radius: 24px !important;
   border: 1px solid #480001;
@@ -9110,7 +9112,7 @@ section.content {
   font-size: 16px;
   margin-top: 24px;
   background-color: #fff;
-  color: #480001;
+  color: #993030;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -9121,8 +9123,7 @@ section.content {
 }
 
 .btn-cta.btn-reversed:hover {
-  background-color: #fff;
-  color: #993030;
+  background-color: #fafafa;
 }
 
 .btn-cta.btn-reversed:hover svg g {
@@ -9164,7 +9165,7 @@ section.content {
 footer {
   margin-top: 120px;
   border-top: 1px solid #e1e1e1;
-  padding: 109px 0;
+  padding: 85px 0;
 }
 
 footer .footer-links {
@@ -9239,12 +9240,12 @@ footer .sign img {
 footer .social-links {
   list-style: none;
   display: inline-block;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 footer .social-links li {
   display: inline-block;
-  margin: 0 0.25rem;
+  margin: 0 8px;
   /* Effect 3b */
 }
 
@@ -9579,6 +9580,14 @@ footer .social-links li a:hover {
   width: 100%;
 }
 
+.main-slider .btn-cta {
+  color: #993030;
+}
+
+.main-slider .btn-cta:hover {
+  background-color: #f5f5f5;
+}
+
 /* ==== Main CSS === */
 .img-fill {
   width: 100%;
@@ -9622,7 +9631,11 @@ footer .social-links li a:hover {
 .main-slider .item .img-fill {
   height: 100%;
   background: #000;
-  border-radius: 30px;
+  border-radius: 24px;
+}
+
+.main-slider .item .img-fill img {
+  border-radius: 24px;
 }
 
 .main-slider .item .img-fill .info {
@@ -9696,6 +9709,8 @@ footer .social-links li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .main-slider .controls:hover {
@@ -10061,12 +10076,26 @@ footer .social-links li a:hover {
 
 .product-slider .product-img .product-actions .btn {
   padding: 0;
-  margin: 0 8px;
+  margin: 0 10px;
 }
 
 .product-slider .product-img .product-actions .btn:focus {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
+}
+
+.product-slider .product-img .product-actions .btn:last-child {
+  margin-right: 0;
+}
+
+.product-slider .product-img .product-actions .btn:last-child img {
+  width: 23.3px;
+  height: 21.4px;
+}
+
+.product-slider .product-img .product-actions .btn:first-child img {
+  width: 22px;
+  height: 25px;
 }
 
 .product-slider .product-item {
@@ -10110,6 +10139,12 @@ footer .social-links li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.product-slider .controls:hover {
+  background-color: #fafafa;
 }
 
 .product-slider .controls.top-12 {
@@ -10251,8 +10286,8 @@ footer .social-links li a:hover {
   background-size: cover;
   top: 24px;
   right: 24px;
-  width: 69.9px;
-  height: 69.9px;
+  width: 70px;
+  height: 70px;
   z-index: 6;
   font-size: 20px;
   color: #fff;
