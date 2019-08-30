@@ -9060,6 +9060,15 @@ section.content {
 .search-input.collapsed .input-group-prepend button {
   position: absolute;
   left: -2px;
+  padding: .375rem .75rem;
+}
+
+.search-input.collapsed .input-group-prepend i {
+  font-size: 18px;
+}
+
+.search-input.collapsed .input-group-prepend i:before {
+  content: '\e800';
 }
 
 .search-input input {
@@ -9085,6 +9094,9 @@ section.content {
 .search-input .input-group-prepend button {
   pointer-events: all;
   outline: none;
+  padding: .15rem .5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .search-input .input-group-prepend button:focus {
@@ -9094,7 +9106,11 @@ section.content {
 }
 
 .search-input .input-group-prepend i {
-  font-size: 18px;
+  font-size: 24px;
+}
+
+.search-input .input-group-prepend i:before {
+  content: "\00d7";
 }
 
 .btn-cta {
@@ -9176,7 +9192,7 @@ footer .footer-links {
 
 footer .footer-links li {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 16px;
   font-size: 14px;
 }
 
@@ -9186,10 +9202,13 @@ footer .footer-links li:first-child {
 
 footer .footer-links li a {
   color: #480001;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 footer .footer-links li a:hover {
   text-decoration: none;
+  color: #993030;
 }
 
 footer .copyright {
@@ -9199,6 +9218,10 @@ footer .copyright {
 
 footer .copyright .copyright-link {
   color: #1e1e1e;
+}
+
+footer .copyright .copyright-link:hover {
+  text-decoration: none;
 }
 
 footer .sign {
@@ -9345,10 +9368,18 @@ footer .social-links li a:hover {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.85);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   overflow-y: overlay;
+}
+
+@media (min-width: 1200px) {
+  .overlay-menu .container {
+    max-width: 1215px;
+  }
 }
 
 .overlay-menu.show {

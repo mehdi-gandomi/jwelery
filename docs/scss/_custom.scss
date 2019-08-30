@@ -297,8 +297,16 @@ body{
         button{
           position: absolute;
           left: -2px;
+          padding: .375rem .75rem;
         }
         transition: all 0.8s;
+        i{
+          font-size: 18px;
+          &:before{
+            content: '\e800';
+            
+          }
+        }
       }
     }
     // &:before{
@@ -331,13 +339,18 @@ body{
       button{
         pointer-events: all;
         outline: none;
+        padding: .15rem .5rem;
+        transition: all 0.5s;
         &:focus{
           box-shadow: unset !important;
           outline: 0 !important;
         }
       }
       i{
-        font-size: 18px;
+        font-size: 24px;
+        &:before{
+          content: "\00d7";
+        }
       }
     }
   }
@@ -479,15 +492,17 @@ body{
       margin: 0;
       li{
         display: inline-block;
-        margin: 0 1rem;
+        margin: 0 16px;
         font-size: 14px;
         &:first-child{
           margin-right: 0 ;
         }
         a{
           color: $baseColor;
+          transition: all 0.5s;
           &:hover{
             text-decoration: none;
+            color: $ctaBtnColor;
           }
         }
       }
@@ -497,6 +512,9 @@ body{
       margin-top: 24px;
       .copyright-link{
         color: $headingColor;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
     .sign{
