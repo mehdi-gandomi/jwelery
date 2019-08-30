@@ -9823,26 +9823,15 @@ footer .social-links li a:hover {
   height: 48px !important;
 }
 
-.main-slider .slick-slide.slick-active p, .main-slider .slick-slide.slick-active h3 {
+.main-slider .slick-slide p, .main-slider .slick-slide h3, .main-slider .slick-slide .btn-cta {
+  visibility: hidden;
+  -webkit-transform: translate3d(10%, 0, 0);
+          transform: translate3d(10%, 0, 0);
+}
+
+.main-slider .slick-slide.slick-active p, .main-slider .slick-slide.slick-active h3, .main-slider .slick-slide.slick-active .btn-cta {
   -webkit-animation: slideInRight 1s ease both;
           animation: slideInRight 1s ease both;
-}
-
-.main-slider .slick-slide.slick-active p {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
-.main-slider .slick-slide.slick-active h3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.main-slider .slick-slide.slick-active .btn-cta {
-  -webkit-animation: flipInX 1s ease 1.5s both;
-          animation: flipInX 1s ease 1.5s both;
 }
 
 .main-slider .slick-slide p {
@@ -9875,28 +9864,24 @@ footer .social-links li a:hover {
  * ---------------------------------------------- */
 @-webkit-keyframes slideInRight {
   from {
-    -webkit-transform: translate3d(30%, 0, 0);
-    transform: translate3d(30%, 0, 0);
-    visibility: visible;
-    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes slideInRight {
   from {
-    -webkit-transform: translate3d(30%, 0, 0);
-    transform: translate3d(30%, 0, 0);
-    visibility: visible;
-    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 
