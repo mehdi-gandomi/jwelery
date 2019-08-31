@@ -1,7 +1,10 @@
 var mouseIsOverSearch=false;
-$(".search-input").on("mouseenter",function(e){
-  $(this).removeClass("collapsed");
-  mouseIsOverSearch=true;
+$(".search-input .input-group-prepend").on("click",function(e){
+  // setTimeout(function(){
+    $(".search-input").toggleClass("collapsed");
+  // },0);
+  // $(".search-input input").focus();
+  // mouseIsOverSearch=true;
 })
 // $(".search-input").on("mouseleave",function(e){
 //   if($(this).find("input").is(":focus"))return;
@@ -9,13 +12,18 @@ $(".search-input").on("mouseenter",function(e){
 //   mouseIsOverSearch=false;
 
 // })
-$(".search-input input").on("blur",function(e){
-  console.log(e);
-  // if(!mouseIsOverSearch){
+// $(".search-input input").on("blur",function(e){
+//   console.log(e);
+//   // if(!mouseIsOverSearch){
+//     $(".search-input").addClass("collapsed");
+//   // }
+// });
+$(document).click(function(event){
+  console.log(event);
+  if(!$('.search-input').hasClass('collapsed') && $(event.target).closest(".right-nav").length == 0) {
     $(".search-input").addClass("collapsed");
-  // }
+  }
 });
-
 
 $(".menu-toggle").click(function(){
   $(".overlay-menu").toggleClass("show");

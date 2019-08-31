@@ -15,7 +15,7 @@ $(document).ready(function(){
   
   $('.product-slider').slick({
       infinite: true,
-      speed: 300,
+      speed: 2000,
       slidesToShow: 4,
       slidesToScroll: 4,
       prevArrow:'<button class="controls PrevArrow"></button>',

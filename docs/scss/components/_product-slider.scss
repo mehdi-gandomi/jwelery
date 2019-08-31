@@ -5,6 +5,9 @@
       font-size: 21px !important;
       margin-top: 12px;
     }
+    // .slick-slide{
+    //   width: 277px;
+    // }
     .product-price{
       color: $productPriceColor;
       font-size: 15px;
@@ -30,15 +33,26 @@
           right: 16px;
           .btn{
             padding: 0;
-            margin: 0 8px;
+            margin: 0 10px;
+            
             &:focus{
               box-shadow: unset !important;
             }
-            
+            &:last-child{
+              margin-right: 0;
+              img{
+                width: 23.3px;
+                height: 21.4px;
+              }
+            }
+            &:first-child{
+              img{
+                width: 22px;
+                height: 25px;
+              }
+            }
           }
-          // i{
-          //   font-size: 1.3rem !important;
-          // }
+          
         }
     }
     .product-item{
@@ -73,6 +87,10 @@
         border-radius: 50%;
         display: flex;
         justify-content: center;
+        transition: all 0.4s; 
+        &:hover{
+          background-color: $controlArrowsHoverBackground ;
+         }
         &.top-12{
           top: 12%;
         }

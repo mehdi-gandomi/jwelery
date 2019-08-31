@@ -14,6 +14,12 @@
         width: 100%;
       }
     }
+    .btn-cta{
+      color: $ctaBtnColor;
+      &:hover{
+        background-color: #f5f5f5;
+      }
+    }
   
 }
 /* ==== Main CSS === */
@@ -59,9 +65,12 @@
   .main-slider .item .img-fill{
     height:100%;
     background:#000;
-    border-radius: 30px;
+    border-radius: 24px;
+    img{
+      border-radius: 24px;
+    }
   }
-  
+
   .main-slider .item .img-fill .info{
     position:absolute;
     width:100%;
@@ -126,6 +135,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    transition: all 0.4s;
     &:hover{
      background-color: $controlArrowsHoverBackground ;
     }
@@ -239,20 +249,24 @@
   }
   
   .main-slider .slick-slide {
+    p,h3,.btn-cta{
+      visibility: hidden;
+      transform: translate3d(10%, 0, 0);  
+    }
     &.slick-active{
-      p,h3{
+      p,h3,.btn-cta{
         animation: slideInRight 1s ease both;
       }
-      p{
-        animation-delay: 1s;
-        animation-duration: 1.5s;
-      }
-      h3{
-        animation-delay: 0.3s;
-      }
-      .btn-cta{
-        animation: flipInX 1s ease 1.5s both;
-      }
+      // p{
+      //   // animation-delay: 1s;
+      //   // animation-duration: 1.5s;
+      // }
+      // h3{
+      //   // animation-delay: 0.3s;
+      // }
+      // .btn-cta{
+      //   animation: flipInX 1s ease both;
+      // }
     }
     p{
       color:$headingColor;
@@ -282,16 +296,17 @@
 
 @keyframes slideInRight {
   from {
-    -webkit-transform: translate3d(30%, 0, 0);
-    transform: translate3d(30%, 0, 0);
-    visibility: visible;
-    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
+    // visibility: visible;
+    // opacity: 0;
   }
 
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    // opacity: 1;
+    visibility: visible;
   }
 }
 @-webkit-keyframes flipInX {

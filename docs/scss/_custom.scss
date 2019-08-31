@@ -140,13 +140,12 @@ body{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.4s;
     &:hover{
       background-color: $ctaBtnHoverBackground;
     }
   }
   .menu-toggle {
-    
     width: 48px;
     height: 48px;
     position: relative;
@@ -154,7 +153,8 @@ body{
     background: white;
     border-radius: 50%;
     border: 1px solid $baseColor;
-    outline: none;
+    outline: none;  
+    transition: all 0.4s;
     &:hover{
       background-color: $ctaBtnHoverBackground
     }
@@ -270,10 +270,11 @@ body{
   }
 }
   .search-input{
-    transition: all 0.8s;
+    transition: all 0.5s;
     width: 360px;
     border-radius: 24px !important;
     border: 1px solid $baseColor;
+    
     &.collapsed{
       // transition: all 0.2s;
       &:before{
@@ -296,8 +297,16 @@ body{
         button{
           position: absolute;
           left: -2px;
+          padding: .375rem .75rem;
         }
         transition: all 0.8s;
+        i{
+          font-size: 18px;
+          &:before{
+            content: '\e800';
+            
+          }
+        }
       }
     }
     // &:before{
@@ -313,7 +322,7 @@ body{
     input{
       border: 0 !important;
       border-radius: 24px !important;
-      height: 100%;
+      height: 95%;
       font-family: IRANSans;
       font-size: 12px;
       z-index: auto;
@@ -330,13 +339,18 @@ body{
       button{
         pointer-events: all;
         outline: none;
+        padding: .15rem .5rem;
+        transition: all 0.5s;
         &:focus{
           box-shadow: unset !important;
           outline: 0 !important;
         }
       }
       i{
-        font-size: 18px;
+        font-size: 24px;
+        &:before{
+          content: "\00d7";
+        }
       }
     }
   }
@@ -414,14 +428,13 @@ body{
     font-size: $ctaBtnFontSize;
     margin-top: $ctaBtnMarginTop;
     background-color: $ctaBtnBackground;
-    color: $baseColor;
+    color: $ctaBtnColor;
     transition: all 0.5s;
     &.btn-reversed{
       background-color: $baseColor;
       color: #fff;
       &:hover{
-        background-color: #fff;
-        color: $ctaBtnColor;
+        background-color: $ctaBtnHoverBackground;
         svg g{
           stroke: $baseColor !important;
         }
@@ -479,15 +492,17 @@ body{
       margin: 0;
       li{
         display: inline-block;
-        margin: 0 1rem;
+        margin: 0 16px;
         font-size: 14px;
         &:first-child{
           margin-right: 0 ;
         }
         a{
           color: $baseColor;
+          transition: all 0.5s;
           &:hover{
             text-decoration: none;
+            color: $ctaBtnColor;
           }
         }
       }
@@ -497,6 +512,9 @@ body{
       margin-top: 24px;
       .copyright-link{
         color: $headingColor;
+        &:hover{
+          text-decoration: none;
+        }
       }
     }
     .sign{
@@ -532,10 +550,10 @@ body{
     .social-links{
       list-style: none;
       display: inline-block;
-      padding-right: 2rem;
+      padding-right: 1rem;
       li{
         display: inline-block;
-        margin: 0 0.25rem;
+        margin: 0 8px;
         /* Effect 3b */
         a {
           color: $baseColor;
