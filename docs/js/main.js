@@ -30,17 +30,47 @@ $(".menu-toggle").click(function(){
   $(".overlay-menu .menu-toggle").toggleClass("on");
   $("body").toggleClass("overlay-show");
 });
-function addToFavorites(element){
+function addToFavorites(element,type="toggle"){
   var icon=element.querySelector("img");
-  var svg=icon.getAttribute("src");
-  if(svg.includes("favorite-outline.svg")){
-    svg=svg.replace("favorite-outline.svg","favorite-colored.svg");
+  if(type=="add"){
+    icon.setAttribute("src","img/icons/favorite-colored.svg");
+    return;
+  }else if(type == "remove"){
+    icon.setAttribute("src","img/icons/favorite-outline.svg");
+    return;
   }else{
-    svg=svg.replace("favorite-colored.svg","favorite-outline.svg");
+    var svg=icon.getAttribute("src");
+    if(svg.includes("favorite-outline.svg")){
+      svg=svg.replace("favorite-outline.svg","favorite-colored.svg");
+    }else{
+      svg=svg.replace("favorite-colored.svg","favorite-outline.svg");
+    }
+    icon.setAttribute("src",svg);
   }
-  icon.setAttribute("src",svg);
+  
   // element.classList.toggle("active")
 }
+$(".add-to-fav").click(function(e){
+  if($(this).hasClass("added")){
+    $(this).removeClass("added");
+    addToFavorites(e.currentTarget,"remove");
+  }else{
+    $(this).addClass("added");
+    addToFavorites(e.currentTarget,"add");
+  }
+  
+  
+})
+$(".add-to-fav").mouseenter(function(e){
+  if(!e.currentTarget.classList.contains("added")){
+    addToFavorites(e.currentTarget,"add");
+  }
+})
+$(".add-to-fav").mouseleave(function(e){
+  if(!e.currentTarget.classList.contains("added")){
+    addToFavorites(e.currentTarget,"remove");
+  }
+})
 function toggleMobileStyles(x) {
   if (x.matches) { // If media query matches
 

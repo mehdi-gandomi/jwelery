@@ -1,8 +1,8 @@
 .product-slider{
     direction: ltr !important;
-    margin: 0 0.5rem;
+    // margin: 0 0.5rem;
     .product-title{
-      font-size: 21px !important;
+      font-size: 20px !important;
       margin-top: 12px;
     }
     // .slick-slide{
@@ -33,7 +33,7 @@
           right: 16px;
           .btn{
             padding: 0;
-            margin: 0 10px;
+            margin: 0 6px;
             &:hover{
               svg{
                 path,rect{
@@ -46,13 +46,23 @@
             }
             &:last-child{
               margin-right: 0;
-              svg{
+              svg,img{
                 width: 23.3px;
                 height: 21.4px;
               }
+              img{
+                transition: all 0.3s;
+                // &:hover{
+                //   box-sizing: border-box;
+                //   background: url(../img/icons/favorite-colored.svg) no-repeat;
+                //   width: 25.3px;
+                //   height: 21.4px;
+                //   // padding-left: 23.3px; /* Equal to width of new image */
+                // }
+              }
             }
             &:first-child{
-              svg{
+              svg,img{
                 width: 22px;
                 height: 25px;
               }
@@ -61,10 +71,19 @@
           
         }
     }
+    .slick-cloned{
+      // width: 95% !important;
+      &:last-child{
+
+      }
+      // .product-item{
+      //   margin: 0 0.85rem;
+      // }
+    }
     .product-item{
       width: 95% !important;
       max-width: 277px;
-      margin: 0 0.5rem;
+      // margin: 0 0.5rem;
       &__details{
         // padding-right: 0.5rem;
         display: flex;
@@ -77,7 +96,7 @@
      .controls{
         position:absolute;
         cursor: pointer;
-        top:45%;
+        top:48%;
         transform: translateY(-50%);
         width:52px;
         height:52px;
@@ -119,7 +138,7 @@
       
        .NextArrow{
         
-        right: -19px;
+        right: -26px;
         
       }
       
@@ -129,7 +148,7 @@
       }
       
       .PrevArrow{
-        left:-16px;
+        left:-26px;
       }
       
       .PrevArrow:before{

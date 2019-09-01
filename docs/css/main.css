@@ -8679,16 +8679,6 @@ body.overlay-show {
   overflow-y: hidden;
 }
 
-svg path, svg rec, svg circle {
-  fill: inherit;
-  stroke: inherit;
-}
-
-svg, use {
-  fill: #480001;
-  stroke: #480001;
-}
-
 .btn:focus, button:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -8701,7 +8691,7 @@ svg, use {
 }
 
 .jweleries {
-  margin-top: 56px;
+  margin-top: 85px;
 }
 
 .jweleries .head-title {
@@ -8711,7 +8701,7 @@ svg, use {
 }
 
 .golds {
-  margin-top: 85px;
+  margin-top: 125px;
 }
 
 .input-group > .form-control:focus {
@@ -9058,9 +9048,9 @@ section.content {
 }
 
 .search-input:hover {
-  background-color: #fafafa use;
-  background-color-fill: #993030;
-  background-color-stroke: #993030;
+  background-color: #fafafa svg, path, circle;
+  background-color-fill: #993030 !important;
+  background-color-stroke: #993030 !important;
 }
 
 .search-input.collapsed {
@@ -9251,7 +9241,7 @@ footer .footer-links li a:hover {
 
 footer .copyright {
   font-size: 14px;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 footer .copyright .copyright-link {
@@ -9713,7 +9703,7 @@ footer .social-links li a:hover {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: rgba(231, 231, 231, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9883,6 +9873,7 @@ footer .social-links li a:hover {
   font-family: IRANSans !important;
   font-size: 16px !important;
   line-height: 1.75;
+  margin-top: 16px;
 }
 
 .main-slider .item .btn-cta {
@@ -9899,8 +9890,8 @@ footer .social-links li a:hover {
 }
 
 .main-slider .slick-slide.slick-active p, .main-slider .slick-slide.slick-active h3, .main-slider .slick-slide.slick-active .btn-cta {
-  -webkit-animation: slideInRight 1s ease both;
-          animation: slideInRight 1s ease both;
+  -webkit-animation: slideInRight 0.5s ease both;
+          animation: slideInRight 0.5s ease both;
 }
 
 .main-slider .slick-slide p {
@@ -10096,11 +10087,10 @@ footer .social-links li a:hover {
 
 .product-slider {
   direction: ltr !important;
-  margin: 0 0.5rem;
 }
 
 .product-slider .product-title {
-  font-size: 21px !important;
+  font-size: 20px !important;
   margin-top: 12px;
 }
 
@@ -10130,7 +10120,7 @@ footer .social-links li a:hover {
 
 .product-slider .product-img .product-actions .btn {
   padding: 0;
-  margin: 0 10px;
+  margin: 0 6px;
 }
 
 .product-slider .product-img .product-actions .btn:hover svg path, .product-slider .product-img .product-actions .btn:hover svg rect {
@@ -10146,12 +10136,17 @@ footer .social-links li a:hover {
   margin-right: 0;
 }
 
-.product-slider .product-img .product-actions .btn:last-child svg {
+.product-slider .product-img .product-actions .btn:last-child svg, .product-slider .product-img .product-actions .btn:last-child img {
   width: 23.3px;
   height: 21.4px;
 }
 
-.product-slider .product-img .product-actions .btn:first-child svg {
+.product-slider .product-img .product-actions .btn:last-child img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product-slider .product-img .product-actions .btn:first-child svg, .product-slider .product-img .product-actions .btn:first-child img {
   width: 22px;
   height: 25px;
 }
@@ -10159,7 +10154,6 @@ footer .social-links li a:hover {
 .product-slider .product-item {
   width: 95% !important;
   max-width: 277px;
-  margin: 0 0.5rem;
 }
 
 .product-slider .product-item__details {
@@ -10176,7 +10170,7 @@ footer .social-links li a:hover {
 .product-slider .controls {
   position: absolute;
   cursor: pointer;
-  top: 45%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 52px;
@@ -10229,7 +10223,7 @@ footer .social-links li a:hover {
 }
 
 .product-slider .NextArrow {
-  right: -19px;
+  right: -26px;
 }
 
 .product-slider .NextArrow:before {
@@ -10239,7 +10233,7 @@ footer .social-links li a:hover {
 }
 
 .product-slider .PrevArrow {
-  left: -16px;
+  left: -26px;
 }
 
 .product-slider .PrevArrow:before {

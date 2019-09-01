@@ -10,14 +10,14 @@ body{
     overflow-y: hidden;
   }
 }
-svg path,svg rec,svg circle {
-  fill: inherit;
-  stroke: inherit;
-}
-svg,use{
-fill: $baseColor;
-stroke: $baseColor;
-}
+// svg path,svg rec,svg circle {
+//   fill: inherit;
+//   stroke: inherit;
+// }
+// svg,use{
+// fill: $baseColor;
+// stroke: $baseColor;
+// }
 .btn,button{
   &:focus{
     box-shadow: unset;
@@ -302,10 +302,10 @@ stroke: $baseColor;
     border: 1px solid $baseColor;
     &:hover{
       background-color: $ctaBtnHoverBackground
-        use{
-          fill:$ctaBtnColor;
-          stroke: $ctaBtnColor;
-        }
+      svg,path,circle{
+        fill:$ctaBtnColor !important;
+        stroke: $ctaBtnColor !important;
+      }
     }
     &.collapsed{
       // transition: all 0.2s;
@@ -545,7 +545,7 @@ stroke: $baseColor;
     }
     .copyright{
       font-size: 14px;
-      margin-top: 24px;
+      margin-top: 18px;
       .copyright-link{
         color: $headingColor;
         &:hover{

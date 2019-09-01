@@ -2,7 +2,7 @@ $(document).ready(function(){
   $(".main-slider").slick({
     autoplay:true,
     autoplaySpeed:10000,
-    speed:900,
+    speed:1200,
     slidesToShow:1,
     slidesToScroll:1,
     pauseOnHover:false,
@@ -15,7 +15,7 @@ $(document).ready(function(){
   
   $('.product-slider').slick({
       infinite: true,
-      speed: 2000,
+      speed: 1200,
       slidesToShow: 4,
       slidesToScroll: 4,
       prevArrow:'<button class="controls PrevArrow"></button>',
