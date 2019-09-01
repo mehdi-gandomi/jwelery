@@ -8679,6 +8679,16 @@ body.overlay-show {
   overflow-y: hidden;
 }
 
+svg path, svg rec, svg circle {
+  fill: inherit;
+  stroke: inherit;
+}
+
+svg, use {
+  fill: #480001;
+  stroke: #480001;
+}
+
 .btn:focus, button:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
@@ -8752,6 +8762,10 @@ body.overlay-show {
   margin-top: 83px;
 }
 
+.navbar-expand-lg .left-nav .round-button:last-child svg {
+  max-height: 22px;
+}
+
 @media (max-width: 768px) {
   main .navbar-expand-lg {
     margin-bottom: 145px !important;
@@ -8807,12 +8821,22 @@ section.content {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.round-button svg {
+  max-width: 19px;
+  max-height: 26px;
 }
 
 .round-button:hover {
   background-color: #fafafa;
+}
+
+.round-button:hover use {
+  fill: #993030;
+  stroke: #993030;
 }
 
 .menu-toggle {
@@ -8824,12 +8848,13 @@ section.content {
   border-radius: 50%;
   border: 1px solid #480001;
   outline: none;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-toggle:hover {
-  background-color: #fafafa;
+  background-color: #fafafa span;
+  background-color-color: #993030;
 }
 
 .menu-toggle span {
@@ -9025,11 +9050,17 @@ section.content {
 }
 
 .search-input {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 360px;
   border-radius: 24px !important;
   border: 1px solid #480001;
+}
+
+.search-input:hover {
+  background-color: #fafafa use;
+  background-color-fill: #993030;
+  background-color-stroke: #993030;
 }
 
 .search-input.collapsed {
@@ -9059,7 +9090,8 @@ section.content {
 
 .search-input.collapsed .input-group-prepend button {
   position: absolute;
-  left: -2px;
+  left: -7px;
+  top: 4px;
   padding: .375rem .75rem;
 }
 
@@ -9075,6 +9107,11 @@ section.content {
   border: 0 !important;
   border-radius: 24px !important;
   height: 95%;
+  -webkit-box-flex: unset !important;
+      -ms-flex: unset !important;
+          flex: unset !important;
+  width: 95% !important;
+  margin-right: 2px;
   font-family: IRANSans;
   font-size: 12px;
   z-index: auto;
@@ -9088,7 +9125,8 @@ section.content {
 .search-input .input-group-prepend {
   position: absolute;
   pointer-events: none;
-  left: -1px;
+  left: 6px;
+  top: 7px;
 }
 
 .search-input .input-group-prepend button {
@@ -10095,6 +10133,10 @@ footer .social-links li a:hover {
   margin: 0 10px;
 }
 
+.product-slider .product-img .product-actions .btn:hover svg path, .product-slider .product-img .product-actions .btn:hover svg rect {
+  fill: #993030;
+}
+
 .product-slider .product-img .product-actions .btn:focus {
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
@@ -10104,12 +10146,12 @@ footer .social-links li a:hover {
   margin-right: 0;
 }
 
-.product-slider .product-img .product-actions .btn:last-child img {
+.product-slider .product-img .product-actions .btn:last-child svg {
   width: 23.3px;
   height: 21.4px;
 }
 
-.product-slider .product-img .product-actions .btn:first-child img {
+.product-slider .product-img .product-actions .btn:first-child svg {
   width: 22px;
   height: 25px;
 }

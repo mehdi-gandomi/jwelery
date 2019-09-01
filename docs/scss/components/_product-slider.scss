@@ -34,19 +34,25 @@
           .btn{
             padding: 0;
             margin: 0 10px;
-            
+            &:hover{
+              svg{
+                path,rect{
+                  fill: #993030;
+                }
+              }
+            }
             &:focus{
               box-shadow: unset !important;
             }
             &:last-child{
               margin-right: 0;
-              img{
+              svg{
                 width: 23.3px;
                 height: 21.4px;
               }
             }
             &:first-child{
-              img{
+              svg{
                 width: 22px;
                 height: 25px;
               }

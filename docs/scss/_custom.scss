@@ -10,6 +10,14 @@ body{
     overflow-y: hidden;
   }
 }
+svg path,svg rec,svg circle {
+  fill: inherit;
+  stroke: inherit;
+}
+svg,use{
+fill: $baseColor;
+stroke: $baseColor;
+}
 .btn,button{
   &:focus{
     box-shadow: unset;
@@ -89,6 +97,13 @@ body{
     .right-nav,.left-nav{
       margin-top: 83px;
     }
+    .left-nav{
+     .round-button:last-child{
+      svg{
+        max-height: 22px;
+      }
+     }
+    }
   }
   @media (max-width:768px) {
     main .navbar-expand-lg{
@@ -140,9 +155,17 @@ body{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all 0.4s;
+    transition: all 0.3s;
+    svg{
+      max-width: 19px;
+      max-height: 26px;
+    }
     &:hover{
       background-color: $ctaBtnHoverBackground;
+      use{
+        fill: $ctaBtnColor;
+        stroke: $ctaBtnColor;
+      }
     }
   }
   .menu-toggle {
@@ -154,9 +177,12 @@ body{
     border-radius: 50%;
     border: 1px solid $baseColor;
     outline: none;  
-    transition: all 0.4s;
+    transition: all 0.3s;
     &:hover{
       background-color: $ctaBtnHoverBackground
+      span{
+        color: $ctaBtnColor;
+      }
     }
     span {
       position: absolute;
@@ -270,11 +296,17 @@ body{
   }
 }
   .search-input{
-    transition: all 0.5s;
+    transition: all 0.3s;
     width: 360px;
     border-radius: 24px !important;
     border: 1px solid $baseColor;
-    
+    &:hover{
+      background-color: $ctaBtnHoverBackground
+        use{
+          fill:$ctaBtnColor;
+          stroke: $ctaBtnColor;
+        }
+    }
     &.collapsed{
       // transition: all 0.2s;
       &:before{
@@ -296,7 +328,8 @@ body{
         height: 100%;
         button{
           position: absolute;
-          left: -2px;
+          left: -7px;
+          top:4px;
           padding: .375rem .75rem;
         }
         transition: all 0.8s;
@@ -323,6 +356,9 @@ body{
       border: 0 !important;
       border-radius: 24px !important;
       height: 95%;
+      flex: unset !important;
+      width: 95% !important;
+      margin-right: 2px;
       font-family: IRANSans;
       font-size: 12px;
       z-index: auto;
@@ -334,8 +370,8 @@ body{
     .input-group-prepend{
       position: absolute;
       pointer-events: none;
-      left: -1px;
-      // top: 4px;
+      left: 6px;
+      top: 7px;
       button{
         pointer-events: all;
         outline: none;
